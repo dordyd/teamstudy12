@@ -7,10 +7,12 @@ public class Exercise02_5 {
         String str = JOptionPane.showInputDialog("Insert String");
         StringBuffer strBuffer = new StringBuffer(str);
 
-        String afterstr = strBuffer.substring(strBuffer.length() - 1) + strBuffer.substring(1, strBuffer.length() - 1) +
-                strBuffer.substring(0, 1);
+        String temp = strBuffer.substring(0, 1);
 
-        System.out.println(afterstr);//
+        strBuffer = strBuffer.replace(0, 1, strBuffer.substring(strBuffer.length() - 1));
+        strBuffer = strBuffer.replace(strBuffer.length() - 1, strBuffer.length(), temp);
+
+        System.out.println(strBuffer);
 
     }
 }
