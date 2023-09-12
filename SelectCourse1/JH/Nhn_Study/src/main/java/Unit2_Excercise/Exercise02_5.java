@@ -10,7 +10,7 @@ public class Exercise02_5 {
         String afterstr = strBuffer.substring(strBuffer.length() - 1) + strBuffer.substring(1, strBuffer.length() - 1) +
                 strBuffer.substring(0, 1);
 
-        System.out.println(afterstr);
+        System.out.println(afterstr);//
 
     }
 }
