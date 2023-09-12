@@ -13,6 +13,6 @@ public class Exercise02_5 {
         strBuffer = strBuffer.replace(strBuffer.length() - 1, strBuffer.length(), temp);
 
         System.out.println(strBuffer);
-        
+
     }
 }
