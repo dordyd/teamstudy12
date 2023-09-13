@@ -1,1 +1,39 @@
-# teamstudy12
+= NHN Java Study 커리큘럼
+
+12조
+
+팀원 : 김윤호, 김철환, 이아영, 변정훈
+
+
+== 1과정 : link:https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/[Introduction to Programming]
+
+오전 - link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘], 코드리뷰
+
+오후 - Introduction to Programming 개인별로 읽고 정리, Exercises 문제 풀어서 github에 Push
+
+
+=== 목차 - 끝난 과정 취소선 작성
+1.Introduction to programming +
+2.Use of objects and variables +
+3.Definition of methods and classes +
+4.Primitive data types +
+5.Conditional statements +
+6.Loop statements +
+7.Arrays and matrices +
+8.Files and input/output streams +
+9.Program errors and exception handling +
+10.Recursion +
+11.Dynamic arrays and linked lists +
+
+=== 진행방식
+
+오전에 알고리즘 문제 풀이 후 팀원과 전날 작성한 Exercises 코드 리뷰.
+
+2일에 1 Unit 기준, 진행 속도에 따라서 유동적으로 조절.
+
+1 Unit 끝날 때마다 Exercises 문제 코드리뷰와 용어 정리, 헷갈리는 부분 팀원과 토론하면서 부족한 부분 보충
+
+
+== 2과정
+
+1과정 완료 후 작성 예정.
