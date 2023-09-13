@@ -2,38 +2,63 @@
 
 12조
 
-팀원 : 김윤호, 김철환, 이아영, 변정훈
+팀원 : link:https://github.com/KORyounho[김윤호], link:https://github.com/chulhwan99[김철환], link:https://github.com/weare0gimbab[이아영], link:https://github.com/quswjdgns399/[변정훈]
 
 
 == 1과정 : link:https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/[Introduction to Programming]
-
-오전 - link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘], 코드리뷰
-
-오후 - Introduction to Programming 개인별로 읽고 정리, Exercises 문제 풀어서 github에 Push
-
-
-=== 목차 - 끝난 과정 취소선 작성
-1.Introduction to programming +
-2.Use of objects and variables +
-3.Definition of methods and classes +
-4.Primitive data types +
-5.Conditional statements +
-6.Loop statements +
-7.Arrays and matrices +
-8.Files and input/output streams +
-9.Program errors and exception handling +
-10.Recursion +
-11.Dynamic arrays and linked lists +
 
 === 진행방식
 
 오전에 알고리즘 문제 풀이 후 팀원과 전날 작성한 Exercises 코드 리뷰.
 
+오후에 Introduction to Programming 개인별로 읽고 정리, Exercises 문제 풀어서 github에 Push
+
 2일에 1 Unit 기준, 진행 속도에 따라서 유동적으로 조절.
 
 1 Unit 끝날 때마다 Exercises 문제 코드리뷰와 용어 정리, 헷갈리는 부분 팀원과 토론하면서 부족한 부분 보충
 
+본인 branch에서 본인 폴더에 작업하고 push merge는 1 Unit이 끝날 때마다 진행
 
-== 2과정
+link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘 repository]
 
-1과정 완료 후 작성 예정.
+=== 목차
+
+* [x] Introduction to programming +
+* [x] Use of objects and variables +
+* [ ] Definition of methods and classes +
+* [ ] Primitive data types +
+* [ ] Conditional statements +
+* [ ] Loop statements +
+* [ ] Arrays and matrices +
+* [ ] Files and input/output streams +
+* [ ] Program errors and exception handling +
+* [ ] Recursion +
+* [ ] Dynamic arrays and linked lists +
+
+== 2과정 : link:https://math.hws.edu/javanotes/[Introduction to Programming Using Java]
+
+* [ ] Overview: The Mental Landscape
+* [ ] Programming in the Small I: Names and Things
+* [ ] Programming in the Small II: Control
+* [ ] Programming in the Large I: Subroutines
+* [ ] Programming in the Large II: Objects and Classes
+* [ ] Introduction to GUI Programming
+* [ ] Arrays, ArrayLists, and Records
+* [ ] Correctness, Robustness, Efficiency
+* [ ] Linked Data Structures and Recursion
+* [ ] Generic Programming and Collection Classes
+* [ ] Input/Output Streams, Files, and Networking
+* [ ] Threads and Multiprocessing
+* [ ] GUI Programming Continued
+
+
+
+
+
+
+
+
+
+
+
+
