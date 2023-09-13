@@ -9,8 +9,8 @@ public class Exercise02_5 {
 
         String temp = strBuffer.substring(0, 1);
 
-        strBuffer = strBuffer.replace(0, 1, strBuffer.substring(strBuffer.length() - 1));
-        strBuffer = strBuffer.replace(strBuffer.length() - 1, strBuffer.length(), temp);
+        strBuffer.replace(0, 1, strBuffer.substring(strBuffer.length() - 1));
+        strBuffer.replace(strBuffer.length() - 1, strBuffer.length(), temp);
 
         System.out.println(strBuffer);
 
