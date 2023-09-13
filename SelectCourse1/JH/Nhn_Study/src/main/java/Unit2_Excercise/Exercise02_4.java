@@ -15,7 +15,6 @@ public class Exercise02_4 {
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.printf(arr[i]);
 //        }
-
         String str = JOptionPane.showInputDialog("Insert String");
         String afterstr = str.substring(str.length() - 1) + str.substring(1, str.length() - 1) + str.substring(0, 1);
         System.out.println(afterstr);
