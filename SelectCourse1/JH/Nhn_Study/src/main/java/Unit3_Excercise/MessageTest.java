@@ -8,7 +8,7 @@ public class MessageTest {
 
         String tocall = "010-3657-0768";
 
-        MessageText messageText = new MessageText();
+        MessageText messageText = MessageText.input();
         messageText.input();
 
         System.out.printf("Receiver phone number : ");
