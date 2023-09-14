@@ -3,13 +3,13 @@ public class Message {
     private String sender;
     private String messageText;
 
-    public Message(String caller,String sender,String messageText){
+    private Message(String caller,String sender,String messageText){
         this.caller = caller;
         this.sender = sender;
         this.messageText = messageText;
     }
 
-    public Message(String sender,String messageText){
+    private Message(String sender,String messageText){
         this.sender = sender;
         this.messageText = messageText;
     }
@@ -23,7 +23,7 @@ public class Message {
     }
 
     public static Message MessageOfMessageText(MessageText messageText){
-        return new Message(messageText.getMessageText());
+        return new Message(messageText.getMessageText(), "");
     }
 
     public void setCaller(String caller) {

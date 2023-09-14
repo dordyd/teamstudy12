@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class MessageText {
 
+    static Scanner scan = new Scanner(System.in);
+
     private String code;
     private String messageText;
     
@@ -10,9 +12,10 @@ public class MessageText {
         this.messageText = messageText;
     }
     
-    public MessageText messageTextOf(){
-        Scanner scan = new Scanner(System.in);
+    public static MessageText messageTextOf(){
+        System.out.println("type code");
         String code = scan.nextLine();
+        System.out.println("type message");
         String messageText = scan.nextLine();
         return new MessageText(code, messageText);
     }
@@ -24,5 +27,6 @@ public class MessageText {
     public String getMessageText() {
         return messageText;
     }
-
+    
+    
 }
