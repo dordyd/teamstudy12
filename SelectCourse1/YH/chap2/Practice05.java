@@ -1,4 +1,4 @@
-package SelectCourse1.YH.chap2;
+package chap2;
 
 import javax.swing.JOptionPane;
 
@@ -10,7 +10,7 @@ public class Practice05 {
         buffer.replace(buffer.length()-1, buffer.length(), notEmptyLiteral.substring(0, 1));
         System.out.println(buffer);
         System.out.println(notEmptyLiteral);
-
+        ;
         System.exit(0);
     }
 }

@@ -1,4 +1,4 @@
-package SelectCourse1.YH.chap2;
+package chap2;
 
 import javax.swing.JOptionPane;
 
