@@ -14,14 +14,12 @@ public class Book {
     }
 
     public void printBook() {
-        System.out.println("Title : " + this.title);
-        System.out.println("Author : " + this.author);
+        System.out.println(this);
     }
 
     public void printBookPrice() {
-        System.out.println("Title : " + this.title);
-        System.out.println("Author : " + this.author);
-        System.out.println("Price : " + this.price);
+        printBook();
+        System.out.println("Price : " + getPrice() + "원");
     }
 
     public String getTitle() {
@@ -43,10 +41,15 @@ public class Book {
     public static Book inputBook() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Insert Book Title : ");
-        String title = sc.next();
+        String title = sc.nextLine();
         System.out.printf("Insert Book Author : ");
-        String author = sc.next();
+        String author = sc.nextLine();
 
         return new Book(title, author);
+    }
+
+    @Override
+    public String toString() {
+        return "Title : " + this.title + "\nAuthor  : " + this.author;
     }
 }

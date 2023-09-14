@@ -19,10 +19,10 @@ public class BookExtend extends Book {
         Book book = inputBook();
 
         System.out.printf("Insert Book Course : ");
-        String course = sc.next();
+        String course = sc.nextLine();
 
         System.out.printf("Insert Book Faculty : ");
-        String faculty = sc.next();
+        String faculty = sc.nextLine();
 
         return new BookExtend(book, course, faculty);
 
@@ -30,16 +30,20 @@ public class BookExtend extends Book {
 
 
     public void printBookExtend() {
-        printBook();
-        System.out.println("Course : " + this.textBookCourse);
-        System.out.println("Facility : " + this.textBookFaculty);
+        System.out.println(this);
     }
 
 
     public void pirntBookExtendPrice() {
-        System.out.println("Course : " + this.textBookCourse);
-        System.out.println("Facility : " + this.textBookFaculty);
-        printBookPrice();
+        System.out.println(this);
+        System.out.println("Price : " + getPrice() + "원");
 
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nCourse : " + this.textBookCourse + "\nFaculty : " + this.textBookFaculty;
+    }
+
+
 }

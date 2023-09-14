@@ -2,15 +2,18 @@ package Unit3_Excercises;
 
 public class BookExtendExtend extends Book {
 
-    private String BookTopic;
+    private String bookTopic;
 
-    public BookExtendExtend(Book book, String BookTopic) {
+    public BookExtendExtend(Book book, String bookTopic) {
         super(book.getTitle(), book.getAuthors());
-        this.BookTopic = BookTopic;
+        this.bookTopic = bookTopic;
     }
 
     public void printBookExtendExtend() {
-        printBook();
-        System.out.println("Book Topic : " + this.BookTopic);
+        System.out.println(this);
+    }
+
+    public String toString() {
+        return super.toString() + "\nBook Topic  : " + this.bookTopic;
     }
 }
