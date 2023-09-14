@@ -7,15 +7,13 @@ public class MessageText {
     private String code;
     private String message;
 
-    public MessageText() {
+
+    public MessageText(String code, String message) {
+        this.code = code;
+        this.message = message;
     }
 
-//    public MessageText(String code, String message) {
-//        this.code = code;
-//        this.message = message;
-//    }
-
-    public void input() {
+    public static MessageText input() {
         Scanner sc = new Scanner(System.in);
         System.out.printf("Code : ");
         String code = sc.nextLine();
@@ -23,7 +21,10 @@ public class MessageText {
         System.out.printf("Message : ");
         String message = sc.nextLine();
 
+        return new MessageText(code, message);
+    }
 
+    private void setter(String code, String message) {
         this.code = code;
         this.message = message;
     }
