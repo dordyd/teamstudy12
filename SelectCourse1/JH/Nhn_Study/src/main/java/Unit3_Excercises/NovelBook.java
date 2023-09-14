@@ -1,15 +1,15 @@
 package Unit3_Excercises;
 
-public class BookExtendExtend extends Book {
+public class NovelBook extends Book {
 
     private String bookTopic;
 
-    public BookExtendExtend(Book book, String bookTopic) {
+    public NovelBook(Book book, String bookTopic) {
         super(book.getTitle(), book.getAuthors());
         this.bookTopic = bookTopic;
     }
 
-    public void printBookExtendExtend() {
+    public void printNovelBook() {
         System.out.println(this);
     }
 

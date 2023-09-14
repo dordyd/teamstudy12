@@ -15,20 +15,20 @@ public class BookTest {
 //
 //        book1.printBookPrice();
 
-        BookExtend book1 = BookExtend.BookExtendInput();
-        book1.printBookExtend();
+        TextBook book1 = TextBook.TextBookInput();
+        book1.printTextBook();
         System.out.println("==============================");
 
         Book book2 = Book.inputBook();
         System.out.printf("Insert Book Topic : ");
         String topic = sc.next();
 
-        BookExtendExtend book3 = new BookExtendExtend(book2, topic);
-        book3.printBookExtendExtend();
+        NovelBook book3 = new NovelBook(book2, topic);
+        book3.printNovelBook();
         System.out.println("==============================");
 
         book1.setPrice(100000);
-        book1.pirntBookExtendPrice();
+        book1.pirntTextBookPrice();
 
 
     }

@@ -2,19 +2,19 @@ package Unit3_Excercises;
 
 import java.util.Scanner;
 
-public class BookExtend extends Book {
+public class TextBook extends Book {
     private String textBookCourse;
     private String textBookFaculty;
 
 
-    public BookExtend(Book book, String textBookCourse, String textBookFaculty) {
+    public TextBook(Book book, String textBookCourse, String textBookFaculty) {
         super(book.getTitle(), book.getAuthors());
         this.textBookCourse = textBookCourse;
         this.textBookFaculty = textBookFaculty;
     }
 
 
-    public static BookExtend BookExtendInput() {
+    public static TextBook TextBookInput() {
         Scanner sc = new Scanner(System.in);
         Book book = inputBook();
 
@@ -24,17 +24,17 @@ public class BookExtend extends Book {
         System.out.printf("Insert Book Faculty : ");
         String faculty = sc.nextLine();
 
-        return new BookExtend(book, course, faculty);
+        return new TextBook(book, course, faculty);
 
     }
 
 
-    public void printBookExtend() {
+    public void printTextBook() {
         System.out.println(this);
     }
 
 
-    public void pirntBookExtendPrice() {
+    public void pirntTextBookPrice() {
         System.out.println(this);
         System.out.println("Price : " + getPrice() + "원");
 
