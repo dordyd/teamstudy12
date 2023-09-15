@@ -2,7 +2,7 @@
 
 12조
 
-팀원 Branch : link:https://github.com/KORyounho/teamstudy12/tree/YH[김윤호], link:https://github.com/KORyounho/teamstudy12/tree/CH[김철환], link:https://github.com/KORyounho/teamstudy12/tree/AY[이아영], link:https://github.com/KORyounho/teamstudy12/tree/JH[변정훈]
+팀원 Branch : link:https://github.com/KORyounho/teamstudy12/tree/KYH[김윤호], link:https://github.com/KORyounho/teamstudy12/tree/KCH[김철환], link:https://github.com/KORyounho/teamstudy12/tree/LAY[이아영], link:https://github.com/KORyounho/teamstudy12/tree/ByeonJungHun[변정훈]
 
 
 == 1과정 : link:https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/[Introduction to Programming]
