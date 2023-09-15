@@ -17,7 +17,7 @@
 
 1 Unit 끝날 때마다 Exercises 문제 코드리뷰와 용어 정리, 헷갈리는 부분 팀원과 토론하면서 부족한 부분 보충
 
-본인 branch에서 본인 폴더에 작업하고 push merge는 1 Unit이 끝날 때마다 진행
+본인 branch에서 본인 폴더에 작업하고 push
 
 link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘 repository]
 
