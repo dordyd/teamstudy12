@@ -1,4 +1,4 @@
-package Unit3_Excercises;
+package Unit3_Excercise;
 
 public class Message {
     private String toCall;
