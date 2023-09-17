@@ -10,7 +10,6 @@ public class MessageText {
         this.code = code;
         this.message = message;
     }
-
         public static MessageText keyboardInputMessage(){ //1번 방법
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter code :");
