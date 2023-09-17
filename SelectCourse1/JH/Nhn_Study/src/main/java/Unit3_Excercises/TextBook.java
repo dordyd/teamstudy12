@@ -3,11 +3,11 @@ package Unit3_Excercises;
 import java.util.Scanner;
 
 public class TextBook extends Book {
-    private String textBookCourse;
-    private String textBookFaculty;
+    private final String textBookCourse;
+    private final String textBookFaculty;
 
 
-    public TextBook(Book book, String textBookCourse, String textBookFaculty) {
+    private TextBook(Book book, String textBookCourse, String textBookFaculty) {
         super(book.getTitle(), book.getAuthors());
         this.textBookCourse = textBookCourse;
         this.textBookFaculty = textBookFaculty;

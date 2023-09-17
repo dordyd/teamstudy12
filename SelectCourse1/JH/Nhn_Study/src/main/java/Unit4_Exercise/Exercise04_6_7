@@ -1,0 +1,30 @@
+byte b;
+short s;
+int i;
+long l;
+float f;
+double d;
+char c;
+boolean b1, b2;
+
+<For each of the following expressions, say what is its type:>
+
+1. b+10L                <long> literal 10L => long
+2. (b+i)*l              <long>
+3. (b+i)*l+f            <float>
+4. s/f + Math.sin(f)    <float>
+5. c == 'b'             <boolean>
+6. l+1.5f               <float>
+7. i<10                 <boolean>
+8. b1 == (f >= 5.0)     <boolean>
+9. b1 && !b2            <boolean>
+
+<Given the variable declarations of Exercise 4.6, say which of the following statements causes a compiler error:>
+
+1. s = 65L;             <long>      <NO compiler error>
+2. f = i+100;           <float>     <NO compiler error>
+3. i = 2*b + l;         <int>       <NO compiler error>
+4. b1 = s;                          <Compiler Error>
+5. b2 = s >= 57;        <boolean>   <NO compiler error>
+6. c = b;                           <Compiler Error>
+7. c = 'b';             <char>      <NO compiler error>
