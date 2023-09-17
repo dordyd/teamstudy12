@@ -1,4 +1,4 @@
-package Unit2_Excercise;
+package Unit2_Exercise;
 
 public class Exercise02_3 {
 

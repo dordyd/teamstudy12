@@ -9,6 +9,6 @@ public class TestBankAccount {
         ba.deposit(1000);
         ba.withdraw(100);
         System.out.println("After the operations : " + ba);
-        
+
     }
 }

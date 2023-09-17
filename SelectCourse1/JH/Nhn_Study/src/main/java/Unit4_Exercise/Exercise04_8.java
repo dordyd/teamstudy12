@@ -13,6 +13,6 @@ public class Exercise04_8 {
         method(c, r);
         System.out.println(c + " " + r.bal);
     }
-    
+
 
 }
