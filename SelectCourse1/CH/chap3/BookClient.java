@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import SelectCourse1.CH.chap3.Book;
-
 public class BookClient {
     
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package SelectCourse1.CH.chap3;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
@@ -52,8 +52,13 @@ public class Book {
         this.price = price;
     }
 
-    public static readInput(){
+    public static Book readInput(){
+        System.out.println("Type title, authors");
+        return new Book(scan.nextLine(), scan.nextLine());
+    }
 
+    public String toString(){
+        return title + " " + authors + " " + price;
     }
 
 }
