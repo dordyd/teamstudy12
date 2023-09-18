@@ -2,7 +2,7 @@
 
 12조
 
-팀원 Branch : link:https://github.com/KORyounho/teamstudy12/tree/YH[김윤호], link:https://github.com/KORyounho/teamstudy12/tree/CH[김철환], link:https://github.com/KORyounho/teamstudy12/tree/AY[이아영], link:https://github.com/KORyounho/teamstudy12/tree/JH[변정훈]
+팀원 Branch : link:https://github.com/KORyounho/teamstudy12/tree/KYH[김윤호], link:https://github.com/KORyounho/teamstudy12/tree/KCH[김철환], link:https://github.com/KORyounho/teamstudy12/tree/LAY[이아영], link:https://github.com/KORyounho/teamstudy12/tree/ByeonJungHun[변정훈]
 
 
 == 1과정 : link:https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/[Introduction to Programming]
@@ -17,7 +17,7 @@
 
 1 Unit 끝날 때마다 Exercises 문제 코드리뷰와 용어 정리, 헷갈리는 부분 팀원과 토론하면서 부족한 부분 보충
 
-본인 branch에서 본인 폴더에 작업하고 push merge는 1 Unit이 끝날 때마다 진행
+본인 branch에서 본인 폴더에 작업하고 push
 
 link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘 repository]
 
@@ -25,7 +25,7 @@ link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘 rep
 
 * [x] Introduction to programming +
 * [x] Use of objects and variables +
-* [ ] Definition of methods and classes +
+* [x] Definition of methods and classes +
 * [ ] Primitive data types +
 * [ ] Conditional statements +
 * [ ] Loop statements +
