@@ -21,9 +21,9 @@ boolean b1, b2;
 
 <Given the variable declarations of Exercise 4.6, say which of the following statements causes a compiler error:>
 
-1. s = 65L;             <long>      <NO compiler error>
+1. s = 65L;                         <Compiler Error>
 2. f = i+100;           <float>     <NO compiler error>
-3. i = 2*b + l;         <int>       <NO compiler error>
+3. i = 2*b + l;                     <Compiler Error>
 4. b1 = s;                          <Compiler Error>
 5. b2 = s >= 57;        <boolean>   <NO compiler error>
 6. c = b;                           <Compiler Error>

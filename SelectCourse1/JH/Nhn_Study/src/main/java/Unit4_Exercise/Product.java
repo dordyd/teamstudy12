@@ -2,8 +2,8 @@ package Unit4_Exercise;
 
 public class Product {
 
-    private String productName;
-    private int numberOfProduct = 0;
+    private final String productName;
+    private int numberOfProduct;
 
     public Product(String productName) {
         this.productName = productName;
