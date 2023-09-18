@@ -1,4 +1,4 @@
-package Unit3_Excercise;
+package Unit3_Exercise;
 
 import java.util.Scanner;
 
@@ -24,10 +24,10 @@ public class MessageText {
         return new MessageText(code, message);
     }
 
-    private void setter(String code, String message) {
-        this.code = code;
-        this.message = message;
-    }
+//    private void setter(String code, String message) {
+//        this.code = code;
+//        this.message = message;
+//    }
 
     public String getCode() {
         return this.code;

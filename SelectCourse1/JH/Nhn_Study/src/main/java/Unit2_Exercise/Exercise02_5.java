@@ -1,4 +1,4 @@
-package Unit2_Excercise;
+package Unit2_Exercise;
 
 import javax.swing.JOptionPane;
 
@@ -13,6 +13,5 @@ public class Exercise02_5 {
         strBuffer.replace(strBuffer.length() - 1, strBuffer.length(), temp);
 
         System.out.println(strBuffer);
-
     }
 }
