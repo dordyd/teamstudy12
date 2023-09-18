@@ -5,6 +5,13 @@ public class Message {
     private String senderNumber;
     private MessageText messageText;
 
+    public Message(MessageText messageText) {
+        this(messageText, "", "");
+    }
+
+      public Message(MessageText messageText, String senderNumber) {
+        this(messageText, "", senderNumber);
+    }
     
     public Message(MessageText messageText, String callNumber, String senderNumber) {
         this.messageText = messageText;
@@ -12,13 +19,6 @@ public class Message {
         this.senderNumber = senderNumber;
     }
 
-    public Message(MessageText messageText, String senderNumber) {
-        this(messageText, "", senderNumber);
-    }
-
-    public Message(MessageText messageText) {
-        this(messageText, "", "");
-    }
 
     public void updateCallNumber(String newCallNumber) {
         this.callNumber = newCallNumber;

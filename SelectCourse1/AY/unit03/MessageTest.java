@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class Message_05 {
+public class MessageTest {
     public static void main(String[] args) {
 
          Scanner sc=new Scanner(System.in);
-       String mTxt=sc.nextLine();
+       String mText=sc.nextLine();
        String mCode=sc.nextLine();
 
-        MessageText messagetext=new MessageText(mTxt,mCode);
+        MessageText messagetext=new MessageText(mText,mCode);
 
         String senderNumber=sc.nextLine();
        // String messageText=messagetext.getText();
