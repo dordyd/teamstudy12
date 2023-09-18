@@ -1,9 +1,11 @@
 package chap3;
 
+import java.util.Scanner;
+
 public class Message {
-    MessageText messageText;
-    String toCallNumber;
-    String senderNumber;
+    private MessageText messageText;
+    private String toCallNumber;
+    private String senderNumber;
 
     public Message(MessageText messageText, String toCallNumber, String senderNumber) {
         this.messageText = messageText;
@@ -13,7 +15,19 @@ public class Message {
 
     public Message(MessageText messageText, String senderNumber) {
         this.messageText = messageText;
-        this.senderNumber = senderNumber;
+        this.toCallNumber = senderNumber;
+    }
+
+    public MessageText getMessageText() {
+        return messageText;
+    }
+
+    public String getToCallNumber() {
+        return toCallNumber;
+    }
+
+    public String getSenderNumber() {
+        return senderNumber;
     }
 
     public Message(MessageText messageText) {
@@ -26,6 +40,10 @@ public class Message {
 
     public void printMessage(){
         System.out.println(messageText);
+    }
+
+    public void setSenderNumber(String senderNumber) {
+        this.senderNumber = senderNumber;
     }
 
     @Override
