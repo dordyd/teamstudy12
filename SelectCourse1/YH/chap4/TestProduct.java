@@ -7,6 +7,7 @@ public class TestProduct {
         lamp.downLoad(1000);
         lamp.upLoad(100);
         System.out.println("After the loading " + lamp);
+
     }
     
 }

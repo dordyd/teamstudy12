@@ -245,4 +245,6 @@ Temporary Items
 # iCloud generated files
 *.icloud
 *.iml
+teamstudy12.iml
+SelectCourse1.SelectCourse1.iml
 # End of https://www.toptal.com/developers/gitignore/api/macos,java,intellij

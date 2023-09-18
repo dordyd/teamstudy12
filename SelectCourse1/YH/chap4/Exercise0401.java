@@ -52,6 +52,7 @@ public class Exercise0401 {
 
         exercise0403(); // ex03
 
+
         System.out.println(even(1000)); // ex04
         
         short x = 22; // ex05

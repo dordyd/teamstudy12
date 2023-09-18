@@ -1,5 +1,6 @@
 package chap4;
 
+
 public class Exercise0408 {
     public static void method(int a, Account b){
         a *=2;

@@ -1,6 +1,7 @@
 package chap4;
 
-public class Exercise0410 {
+public class
+Exercise0410 {
     public static char lastCharacter(String s){
         return s.charAt(s.length()-1);
     }
