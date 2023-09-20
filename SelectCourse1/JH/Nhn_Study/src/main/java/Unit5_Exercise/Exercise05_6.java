@@ -4,35 +4,31 @@ import java.util.Scanner;
 
 public class Exercise05_6 {
 
-
     public static void answerQuestion(String question) {
-        String start = String.valueOf(question.charAt(0));
-        String last = String.valueOf(question.charAt(question.length() - 1));
+        char start = Character.toLowerCase(question.charAt(0));
+        char last = Character.toLowerCase(question.charAt(question.length() - 1));
 
-        StringBuilder sb = new StringBuilder();
+        String result = "";
 
-        if (start.equals("i") || start.equals("e") || start.equals("u") || start.equals("o") || start.equals("a")
-                || start.equals("I") || start.equals("E") || start.equals("U") || start.equals("O") ||
-                start.equals("A")) {
-            sb.append("MAYBE").append(" ");
+        if ("aeiou".contains(String.valueOf(start))) {
+            result += "MAYBE ";
         }
 
-        if (last.equals("a") || last.equals("i") || last.equals("u")) {
-            sb.append("YES").append(" ");
-        } else if (last.equals("e") || last.equals("o")) {
-            sb.append("NO").append(" ");
+        if ("aiu".contains(String.valueOf(last))) {
+            result += "YES ";
+        } else if ("eo".contains(String.valueOf(last))) {
+            result += "NO ";
         } else {
-            sb.append("DON' T KNOW");
+            result += "DON'T KNOW";
         }
 
-        System.out.println(sb);
+        System.out.println(result);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String question = sc.nextLine();
         answerQuestion(question);
-
-
+        sc.close();
     }
 }
