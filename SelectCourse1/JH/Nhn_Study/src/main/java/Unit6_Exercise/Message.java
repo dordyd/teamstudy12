@@ -18,22 +18,7 @@ public class Message {
         sender = receiver;
         receiver = temp;
     }
-
-//    public void optionOfMessage(int option) {
-//        switch (option) {
-//            case 1:
-//                text = text.trim().replaceAll("\\s+", " ");
-//                break;
-//            case 2:
-//                text = text.replaceAll("[aeiouAEIOU]", "");
-//                break;
-//            case 3:
-//                text = text.trim().replaceAll("\\s+", " ").replaceAll("[aeiouAEIOU]", "");
-//                break;
-//            default:
-//                System.out.println("해당 옵션은 없습니다.");
-//        }
-//    }
+    
 
     public void moreThanOneWhiteSpaceToSingle() {
         text = text.trim().replaceAll("\\s+", " ");
