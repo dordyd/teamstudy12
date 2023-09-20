@@ -12,29 +12,6 @@ public class Message {
         this.text = text;
     }
 
-    public String getSender() {
-        return sender;
-    }
-
-    public void setSender(String sender) {
-        this.sender = sender;
-    }
-
-    public String getReceiver() {
-        return receiver;
-    }
-
-    public void setReceiver(String receiver) {
-        this.receiver = receiver;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
 
     public void swapSenderReceiver() {
         String temp = sender;
@@ -42,20 +19,33 @@ public class Message {
         receiver = temp;
     }
 
-    public void compressMessage(int option) {
-        switch (option) {
-            case 1:
-                text = text.trim().replaceAll("\\s+", " ");
-                break;
-            case 2:
-                text = text.replaceAll("[aeiouAEIOU]", "");
-                break;
-            case 3:
-                text = text.trim().replaceAll("\\s+", " ").replaceAll("[aeiouAEIOU]", "");
-                break;
-            default:
-                System.out.println("Invalid compression option.");
-        }
+//    public void optionOfMessage(int option) {
+//        switch (option) {
+//            case 1:
+//                text = text.trim().replaceAll("\\s+", " ");
+//                break;
+//            case 2:
+//                text = text.replaceAll("[aeiouAEIOU]", "");
+//                break;
+//            case 3:
+//                text = text.trim().replaceAll("\\s+", " ").replaceAll("[aeiouAEIOU]", "");
+//                break;
+//            default:
+//                System.out.println("해당 옵션은 없습니다.");
+//        }
+//    }
+
+    public void moreThanOneWhiteSpaceToSingle() {
+        text = text.trim().replaceAll("\\s+", " ");
+    }
+
+    public void eliminateOfAllVowels() {
+        text = text.replaceAll("[aeiouAEIOU]", "");
+    }
+
+    public void all() {
+        moreThanOneWhiteSpaceToSingle();
+        eliminateOfAllVowels();
     }
 
     @Override
@@ -66,16 +56,27 @@ public class Message {
     public static void main(String[] args) {
         Message message = new Message("정훈", "윤호", "   Hey,  what  are  you   doing?   ");
 
+        System.out.println("<Original text>");
+        System.out.println(message);
+        System.out.println("===========================================================");
+
+        System.out.println("<After Swapping Sender Receiver>");
         message.swapSenderReceiver();
         System.out.println(message);
+        System.out.println("===========================================================");
 
-        message.compressMessage(1);
+        System.out.println("<After Eliminate White Space>");
+        message.moreThanOneWhiteSpaceToSingle();
         System.out.println(message);
+        System.out.println("===========================================================");
 
-        message.compressMessage(2);
+        System.out.println("<After Eliminate All Vowels>");
+        message.eliminateOfAllVowels();
         System.out.println(message);
+        System.out.println("===========================================================");
 
-        message.compressMessage(3);
+        System.out.println("<After All>");
+        message.all();
         System.out.println(message);
     }
 }
