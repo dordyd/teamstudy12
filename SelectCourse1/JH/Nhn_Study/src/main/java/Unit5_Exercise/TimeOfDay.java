@@ -12,7 +12,7 @@ public class TimeOfDay {
         this.second = second;
     }
 
-    public boolean comapreTime(TimeOfDay timeOfDay) {
+    public boolean compareTime(TimeOfDay timeOfDay) {
         if (this.hour < timeOfDay.hour) {
             return true;
         } else if (this.minute < timeOfDay.minute) {

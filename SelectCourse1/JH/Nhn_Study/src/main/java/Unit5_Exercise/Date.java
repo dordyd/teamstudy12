@@ -63,8 +63,8 @@ public class Date {
     }
 
     public static void main(String[] args) {
-        Date date1 = new Date(18, 9, 2023);
-        Date date2 = new Date(19, 9, 2023);
+        Date date1 = new Date(29, 2, 2000);
+        Date date2 = new Date(29, 2, 2000);
 
         System.out.println("Date 1: " + date1.getDay() + "/" + date1.getMonth() + "/" + date1.getYear());
         System.out.println("Date 2: " + date2.getDay() + "/" + date2.getMonth() + "/" + date2.getYear());

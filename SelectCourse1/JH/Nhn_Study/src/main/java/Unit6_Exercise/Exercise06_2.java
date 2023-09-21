@@ -3,8 +3,8 @@ package Unit6_Exercise;
 public class Exercise06_2 {
 
     public static void solution(int range) {
-        for (int i = 2; i <= range; i += 2) {
-            System.out.println(i);
+        for (int i = 1; i <= range; i++) {
+            System.out.println(i * 2);
         }
     }
 

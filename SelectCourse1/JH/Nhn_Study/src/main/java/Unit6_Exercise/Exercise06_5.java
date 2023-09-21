@@ -19,6 +19,6 @@ public class Exercise06_5 {
     }
 
     public static void main(String[] args) {
-        System.out.println(calculatePi(100000));
+        System.out.println(calculatePi(1000000000));
     }
 }

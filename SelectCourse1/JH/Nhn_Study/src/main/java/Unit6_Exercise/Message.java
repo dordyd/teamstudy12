@@ -18,7 +18,7 @@ public class Message {
         sender = receiver;
         receiver = temp;
     }
-    
+
 
     public void moreThanOneWhiteSpaceToSingle() {
         text = text.trim().replaceAll("\\s+", " ");
@@ -39,7 +39,7 @@ public class Message {
     }
 
     public static void main(String[] args) {
-        Message message = new Message("정훈", "윤호", "   Hey,  what  are  you   doing?   ");
+        Message message = new Message("정훈", "윤호", "   Hey,          what  are  you   doing?   ");
 
         System.out.println("<Original text>");
         System.out.println(message);
