@@ -21,6 +21,8 @@
 
 link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘 repository]
 
+link:https://www.acmicpc.net/group/workbook/view/18987/62215[baekjoon 문제집]
+
 === 목차
 
 * [x] Introduction to programming +
