@@ -9,12 +9,13 @@ public class Exercise0604 {
         int count = scanner.nextInt();
         int positiveNum = 0;
         int negativeNum = 0;
-        for(int i = 0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             int number = scanner.nextInt();
-            if(number >= 0)
+            if (number >= 0) {
                 positiveNum += number;
-            else
+            } else {
                 negativeNum += number;
+            }
         }
 
         System.out.println("positiveNim = " + positiveNum);

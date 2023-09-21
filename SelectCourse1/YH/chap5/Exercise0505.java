@@ -16,23 +16,20 @@ public class Exercise0505 {
     //         System.out.println("허근이요");
     //     }
     // }
-    public static String numOfRootsDiscriminant(int a, int b, int c){
-        int value = (int)(b*b + (-4)*(a*c));
-        int aResult = (int) ((-1* b + Math.sqrt(value))/2*a);
-        int bResult = (int) ((-1* b - Math.sqrt(value))/2)*a;
-        if(value > 0){
+    public static String numOfRootsDiscriminant(int a, int b, int c) {
+        int value = (int) (b * b + (-4) * (a * c));
+        int aResult = (int) ((-1 * b + Math.sqrt(value)) / 2 * a);
+        int bResult = (int) ((-1 * b - Math.sqrt(value)) / 2) * a;
+        if (value > 0) {
             return "result = " + aResult + ", " + bResult;
-        }
-        else if(value == 0){
+        } else if (value == 0) {
             return "result = " + aResult;
-        }
-        else{
-            return "result = (-" + b + "+- " + "루트 " + Math.abs(value) + "i) / " + 2*a;  
+        } else {
+            return "result = (-" + b + "+- " + "루트 " + Math.abs(value) + "i) / " + 2 * a;
         }
     }
 
-    
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = Integer.parseInt(scanner.next());

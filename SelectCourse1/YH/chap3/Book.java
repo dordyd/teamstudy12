@@ -21,7 +21,7 @@ public class Book {
                 "title = " + this.getTitle() + "\nAuthors = " + this.getAuthors() + "\nPrice = " + this.getPrice());
     }
 
-    public static Book keyboardInput(){
+    public static Book keyboardInput() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter book title:");
         String title = scanner.nextLine();

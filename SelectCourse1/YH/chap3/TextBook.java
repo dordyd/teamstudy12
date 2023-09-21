@@ -21,13 +21,14 @@ public class TextBook extends Book {
         this.referenceBook = referenceBook;
     }
 
-    public TextBook(String title, String authors){
+    public TextBook(String title, String authors) {
         super(title, authors);
     }
 
-    public TextBook(Book book){
+    public TextBook(Book book) {
         super(book.getTitle(), book.getAuthors());
     }
+
     public static TextBook inputTextBook(Book book) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter professpr: ");
@@ -39,6 +40,7 @@ public class TextBook extends Book {
 
         return new TextBook(book, professor, lecture, referenceBook);
     }
+
     public static TextBook inputTextBook() {
 
         Scanner scanner = new Scanner(System.in);
@@ -58,6 +60,7 @@ public class TextBook extends Book {
 
     @Override
     public String toString() {
-        return  super.toString() + "professor = " + professor + " lecture = " + lecture + " referenceBook = " + referenceBook;
+        return super.toString() + "professor = " + professor + " lecture = " + lecture + " referenceBook = " +
+                referenceBook;
     }
 }

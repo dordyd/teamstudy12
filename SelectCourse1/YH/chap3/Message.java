@@ -1,7 +1,5 @@
 package chap3;
 
-import java.util.Scanner;
-
 public class Message {
     private MessageText messageText;
     private String toCallNumber;
@@ -34,11 +32,11 @@ public class Message {
         this.messageText = messageText;
     }
 
-    public void updateNumber(String senderNumber){
+    public void updateNumber(String senderNumber) {
         this.senderNumber = senderNumber;
     }
 
-    public void printMessage(){
+    public void printMessage() {
         System.out.println(messageText);
     }
 

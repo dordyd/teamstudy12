@@ -10,16 +10,15 @@ public class Exercise0503 {
         int a = Integer.parseInt(scanner.next());
         int b = Integer.parseInt(scanner.next());
         int c = Integer.parseInt(scanner.next());
-        
 
-        if(a == b && a == c &&  b == c){
+
+        if (a == b && a == c && b == c) {
             System.out.println("it is regular");
-        }
-        else if( a != b && a != c && b != c){
+        } else if (a != b && a != c && b != c) {
             System.out.println("it is irregular");
-        }
-        else
+        } else {
             System.out.println("it is symmetric");
-        
+        }
+
     }
 }

@@ -2,9 +2,9 @@ package chap4;
 
 
 public class Exercise0408 {
-    public static void method(int a, Account b){
-        a *=2;
-        b.bal*=2;
+    public static void method(int a, Account b) {
+        a *= 2;
+        b.bal *= 2;
     }
 
     public static void main(String[] args) {

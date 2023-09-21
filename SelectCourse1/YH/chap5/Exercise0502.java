@@ -10,27 +10,26 @@ public class Exercise0502 {
         int a = Integer.parseInt(scanner.next());
         int b = Integer.parseInt(scanner.next());
         int c = Integer.parseInt(scanner.next());
-        
+
         int count = 0;
-        
-        if(a == b){
-            count ++;
+
+        if (a == b) {
+            count++;
         }
-        if(b == c){
-            count ++;
+        if (b == c) {
+            count++;
         }
-        if(c == a){
-            count ++;
+        if (c == a) {
+            count++;
         }
 
-        if(count == 0){
+        if (count == 0) {
             System.out.println("it is irregular");
-        }
-        else if(count == 1){
+        } else if (count == 1) {
             System.out.println("it is symmetric");
-        }
-        else
+        } else {
             System.out.println("it is regular");
-        
+        }
+
     }
 }

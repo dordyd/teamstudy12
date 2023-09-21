@@ -1,8 +1,5 @@
 package chap3;
 
-import java.util.Scanner;
-import org.w3c.dom.Text;
-
 public class Practice0308 {
     public static void main(String[] args) {
 
