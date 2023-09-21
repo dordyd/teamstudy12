@@ -26,9 +26,9 @@ link:https://github.com/NHNAcademy-TA/algorithm-gj-4/tree/main/[알고리즘 rep
 * [x] Introduction to programming +
 * [x] Use of objects and variables +
 * [x] Definition of methods and classes +
-* [ ] Primitive data types +
-* [ ] Conditional statements +
-* [ ] Loop statements +
+* [x] Primitive data types +
+* [x] Conditional statements +
+* [x] Loop statements +
 * [ ] Arrays and matrices +
 * [ ] Files and input/output streams +
 * [ ] Program errors and exception handling +
