@@ -23,20 +23,23 @@ public class Apart {
         return this.address;
     }
 
-    public int getResientNumber() {
+    public int getResidentNumber() {
         return residentName.length;
+    }
+    public int getResidentCounter(){
+        return resdientCount;
     }
 
     public void addResdient(String name) {
-        if (resdientCount > getResientNumber() - 1) {
+        if (resdientCount > getResidentNumber() - 1) {
             System.out.println("자리가 없음");
-        } else if (resdientCount == getResientNumber() - 1) {
+        } else if (resdientCount == getResidentNumber() - 1) {
             residentName[resdientCount] = name;
             System.out.println("마지막 손님");
         } else {
             residentName[resdientCount++] = name;
         }
-        System.out.println(getResientNumber() - resdientCount + "자리 남음");
+        System.out.println(getResidentNumber() - resdientCount + "자리 남음");
     }
 
     public String searchForResdientNum(int n) {
