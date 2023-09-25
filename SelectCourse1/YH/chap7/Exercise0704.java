@@ -1,20 +1,19 @@
 package chap7;
 
 public class Exercise0704 {
-    public static int mostMaxValueInArrays(int[] a) {
-        int max = Integer.MIN_VALUE;
+    public static int sumOfRow(int[] a) {
+        int result = 0;
         for (int i = 0; i < a.length; i++) {
-            max = Math.max(a[i], max);
+            result = result + a[i];
         }
-        return max;
+        return result;
     }
 
     public static int[] matrixSumColums(int[][] a) {
         int[] newArr = new int[a.length];
         for (int i = 0; i < a.length; i++) {
-            newArr[i] = mostMaxValueInArrays(a[i]);
+            newArr[i] = sumOfRow(a[i]);
         }
-
         return newArr;
     }
 

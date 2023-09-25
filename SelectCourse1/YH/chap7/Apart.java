@@ -3,7 +3,7 @@ package chap7;
 import java.util.Arrays;
 
 public class Apart {
-    private static int resdientCount;
+    private int resdientCount;
     private int roomSize;
     private String address;
     private String[] residentName = new String[10];
@@ -26,7 +26,8 @@ public class Apart {
     public int getResidentNumber() {
         return residentName.length;
     }
-    public int getResidentCounter(){
+
+    public int getResidentCounter() {
         return resdientCount;
     }
 
@@ -68,9 +69,10 @@ public class Apart {
             for (int i = n; i < resdientCount; i++) {
                 residentName[n] = residentName[n + 1];
             }
+            if (n == getResidentNumber()) {
+                this.residentName[n] = null;
+            }
         }
-
-
     }
 
     @Override

@@ -19,8 +19,8 @@ public class Exercise0702 {
     }
 
     public static Boolean searchArray(int[] arr, int t) {
-        for (int tyT : arr) {
-            if (tyT == t) {
+        for (int i : arr) {
+            if (i == t) {
                 return true;
             }
         }
@@ -29,10 +29,10 @@ public class Exercise0702 {
 
     public static int[] intersection(int[] A, int[] B) {
         int[] resultArr = new int[searchArraySize(A, B)];
-        int j = 0;
-        for (int ele : A) {
-            if (searchArray(B, ele)) {
-                resultArr[j] = ele;
+        int count = 0;
+        for (int i = 0; i < A.length; i++) {
+            if (searchArray(B, A[i])) {
+                resultArr[count++] = A[i];
             }
         }
         return resultArr;
