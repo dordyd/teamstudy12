@@ -11,7 +11,7 @@ public class Exercise07_4 {
         for (int i = 0; i < col; i++) {
             int sum = 0;
             for (int j = 0; j < row; j++) {
-                sum += matrix[j][i];
+                sum += matrix[i][j];
             }
             columnSums[i] = sum;
         }

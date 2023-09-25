@@ -8,24 +8,20 @@ public class Exercise07_5 {
         Arrays.sort(A);
         Arrays.sort(B);
 
-        boolean result = false;
-
         for (int i = 0; i < A.length; i++) {
-            if (A[i] == B[i]) {
-                result = true;
-            } else {
-                result = false;
+            if (A[i] != B[i]) {
+                return false;
             }
         }
 
-        return result;
+        return true;
 
     }
 
     public static void main(String[] args) {
-        int[] A = {3, 1, 2, 4};
+        int[] A = {1, 2, 3, 4};
         int[] B = {1, 2, 3, 4};
-        int[] C = {1, 2, 4, 6};
+        int[] C = {1, 2, 4, 2};
 
         System.out.println(equalArrays(A, B));
         System.out.println(equalArrays(A, C));
