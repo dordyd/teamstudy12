@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
+//다시 해야함
 public class Ex12 {
    
     private int size;

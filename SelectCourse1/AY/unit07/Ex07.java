@@ -13,7 +13,7 @@ public class Ex07 {
             }
             if (!isDup) {//같지않으면 실행함
                 A[size] = A[i];
-                size++;
+                size++;//중복안된 사이즈를 구함
             }
         }
 
