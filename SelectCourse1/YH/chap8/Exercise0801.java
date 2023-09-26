@@ -6,14 +6,15 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintStream;
+
 public class Exercise0801 {
-    public static String[] loadArray(InputStream is, int n) throws IOException{
+    public static String[] loadArray(InputStream is, int n) throws IOException {
         InputStreamReader isr = new InputStreamReader(is);
         BufferedReader br = new BufferedReader(isr);
 
         String[] loadArray = new String[n];
-        
-        for(int i = 0; i<n; i++){
+
+        for (int i = 0; i < n; i++) {
             String str = br.readLine();
             loadArray[i] = str;
         }
@@ -21,15 +22,16 @@ public class Exercise0801 {
         return loadArray;
     }
 
-    public static void saveArray(OutputStream os, String[] sa){
+    public static void saveArray(OutputStream os, String[] sa) {
         PrintStream ps = new PrintStream(os);
-        
-        for(int i = 0; i<sa.length; i++){
+
+        for (int i = 0; i < sa.length; i++) {
             ps.println(sa[i]);
         }
         ps.close();
 
     }
+
     public static void main(String[] args) throws IOException {
         InputStream is = System.in;
 
@@ -37,6 +39,6 @@ public class Exercise0801 {
 
         saveArray(os, loadArray(is, 3));
 
-        
-    }   
+
+    }
 }

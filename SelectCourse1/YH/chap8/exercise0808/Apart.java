@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
+import javax.annotation.processing.Filer;
+
 public class Apart {
     private int resdientCount;
     private int roomSize;
@@ -89,25 +91,39 @@ public class Apart {
                 + Arrays.toString(residentName);
     }
 
-    public void saveToFile(String filename) throws IOException{
+    public void saveToFile(String filename) throws IOException {
         FileWriter fw = new FileWriter(filename, false);
         PrintWriter pw = new PrintWriter(fw);
-        for(int i = 0; i<getResidentCounter(); i++){
+        for (int i = 0; i < getResidentCounter(); i++) {
             pw.println(residentName[i]);
         }
         fw.close();
         pw.close();
     }
 
-    public static void readFromFile(BufferedReader br) throws IOException{
+    public static void readFromFile(BufferedReader br) throws IOException {
         String str = br.readLine();
-        while(str!=null){
+        while (str != null) {
             System.out.println(str);
             str = br.readLine();
         }
     }
 
-    
+    public class Apartment {
+        private String filename;
+
+        public Apartment(String filename) {
+            this.filename = filename;
+
+        }
+
+        public void readFromFileApartment() throws IOException {
+            BufferedReader br = new BufferedReader(new FileReader(new File(filename)));
+            Apart.readFromFile(br);
+        }
+    }
+
+
     public static void main(String[] args) throws IOException {
         String filename = "SelectCourse1/YH/chap8/exercise0808/ex0808data.txt";
 

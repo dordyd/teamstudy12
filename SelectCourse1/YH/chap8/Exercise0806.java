@@ -13,11 +13,12 @@ import java.io.PrintWriter;
 
 public class Exercise0806 {
     static String filepath = "SelectCourse1/YH/chap8/ex0806data.txt";
-    public static int countLines() throws IOException{
+
+    public static int countLines() throws IOException {
         File file = new File(filepath);
         int count = 1;
         BufferedReader br = new BufferedReader(new FileReader(file));
-        while(br.readLine()!=null){
+        while (br.readLine() != null) {
             count++;
         }
         return count;
@@ -27,22 +28,22 @@ public class Exercise0806 {
     //      file = new File(os);
     // }
 
-    public static void print() throws IOException{
+    public static void print() throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(new File(filepath)));
         String s = br.readLine();
-        while(s != null){
+        while (s != null) {
             System.out.println(s);
             s = br.readLine();
         }
     }
 
-    public static void copy(String filename) throws IOException{
+    public static void copy(String filename) throws IOException {
         FileWriter fileWriter = new FileWriter(filename);
         PrintWriter pw = new PrintWriter(fileWriter);
 
         BufferedReader br = new BufferedReader(new FileReader(new File(filepath)));
         String copyStr = br.readLine();
-        while(copyStr != null){
+        while (copyStr != null) {
             pw.println(copyStr);
             copyStr = br.readLine();
         }
@@ -50,7 +51,8 @@ public class Exercise0806 {
         pw.close();
         fileWriter.close();
     }
-    public static void delete(){
+
+    public static void delete() {
         File f = new File(filepath);
         f.delete();
     }

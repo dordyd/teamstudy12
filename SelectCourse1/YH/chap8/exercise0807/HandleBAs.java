@@ -11,18 +11,18 @@ import java.io.PrintWriter;
 public class HandleBAs {
     String filename;
 
-    public HandleBAs(String filename) throws FileNotFoundException{
-        this.filename = filename;    
+    public HandleBAs(String filename) throws FileNotFoundException {
+        this.filename = filename;
     }
 
-    public void interests(double rate) throws IOException{
-        FileWriter fw = new FileWriter("SelectCourse1/YH/chap8/exercise0807/ex0807copydata.txt",false);
+    public void interests(double rate) throws IOException {
+        FileWriter fw = new FileWriter("SelectCourse1/YH/chap8/exercise0807/ex0807copydata.txt", false);
         PrintWriter pw = new PrintWriter(fw);
         BufferedReader br = new BufferedReader(new FileReader(new File(filename)));
-        
+
         String str = br.readLine();
-        while(str != null){
-            String [] strArr = str.split(" ");
+        while (str != null) {
+            String[] strArr = str.split(" ");
             strArr[2] = String.valueOf(Double.valueOf(strArr[2]) + Double.valueOf(strArr[2]) * (rate / 100.0));
 
             pw.println(strArr[0] + " " + strArr[1] + " " + strArr[2]);
@@ -36,12 +36,12 @@ public class HandleBAs {
         boolean b = newfile.renameTo(oldfile);
     }
 
-    public void printNegative() throws IOException{
+    public void printNegative() throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(new File(filename)));
         String str = br.readLine();
-        while(str != null){
-            String [] strArr = str.split(" ");
-            if(Double.parseDouble(strArr[2]) < 0){
+        while (str != null) {
+            String[] strArr = str.split(" ");
+            if (Double.parseDouble(strArr[2]) < 0) {
                 System.out.println(str);
             }
             str = br.readLine();
