@@ -31,7 +31,7 @@ link:https://www.acmicpc.net/group/workbook/view/18987/62215[baekjoon 문제집]
 * [x] Primitive data types +
 * [x] Conditional statements +
 * [x] Loop statements +
-* [ ] Arrays and matrices +
+* [x] Arrays and matrices +
 * [ ] Files and input/output streams +
 * [ ] Program errors and exception handling +
 * [ ] Recursion +
