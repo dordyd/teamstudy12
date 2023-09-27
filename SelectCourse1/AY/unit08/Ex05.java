@@ -19,26 +19,20 @@ public class Ex05 {
 
              String highStudent = "";
              double highAvr = 0; 
+             one=br.readLine();
 
-            while ((one = br.readLine()) != null) {
+            while (one != null) {
                 String[] obj = one.split(" ");
-                
-
                 String name = obj[0];
                 double sum = 0.0;
                 int count = 0;
 
                 for (int i = 1; i < obj.length; i++) {
-    
                         int mark = Integer.parseInt(obj[i]);
                         sum += mark;
-                        count++;
-                   
-                }
-
-            
+                        count++;                  
+                }      
                 double average = sum / count;
-
                 if (average > highAvr) {
                     highAvr = average;
                     highStudent = name;

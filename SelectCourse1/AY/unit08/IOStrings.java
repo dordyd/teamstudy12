@@ -23,12 +23,15 @@ public class IOStrings{
 
 public void saveArray(OutputStream os, String[] sa) throws IOException{
     OutputStreamWriter osw=new OutputStreamWriter(os);
-    BufferedWriter bw=new BufferedWriter(osw);
+    BufferedWriter bw=new BufferedWriter(osw);//printWiter?
     
         for (String str : sa) {
                 bw.write(str);
                 bw.newLine();
         }
+    
+}
+public static void main(String[] args) {
     
 }
 }

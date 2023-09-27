@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Ex03 {
     static char [] c ={ '/', ',', '%'}; 
 
-     public static void printSignExecpt(File f) throws IOException{
+     public static void printSign(File f) throws IOException{
         FileReader fr = new FileReader(f);
         BufferedReader br = new BufferedReader(fr);
         String st = br.readLine();
@@ -24,7 +24,7 @@ public class Ex03 {
     public static void main(String[] args) throws IOException {
         File f = new File("ex03.txt");
        ///Users/weare0/Desktop/unit/teamstudy12/SelectCourse1/AY/unit08
-        printSignExecpt(f);
+        printSign(f);
 
     }
 }

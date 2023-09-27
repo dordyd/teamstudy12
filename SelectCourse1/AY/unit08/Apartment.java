@@ -56,8 +56,6 @@ public class Apartment {
         int size = Integer.parseInt(br.readLine());
         String address = br.readLine();
 
-
-
         Apartment apartment = new Apartment(size, address);
 
         int pCount = Integer.parseInt(br.readLine());
@@ -67,11 +65,7 @@ public class Apartment {
         }
 
         return apartment;
-        }
-    
-        
-
-        
+        }    
     
 public static void main(String[] args) throws IOException {
     Apartment ap=new Apartment(50, "Gwangju", args, 10);

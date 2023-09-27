@@ -26,8 +26,7 @@ public class IOFile {
 
         int n=0;
         String line=in.readLine();
-        while(line!=null){
-            
+        while(line!=null){         
             n++;
         }
         return n;
@@ -41,8 +40,9 @@ public class IOFile {
     //     }
     FileInputStream is=new FileInputStream(filename);
     BufferedInputStream bis=new BufferedInputStream(is);
-    
+
     }
+    
     public void print() throws IOException{
         FileReader fr=new FileReader(filename);
         BufferedReader br=new BufferedReader(fr);

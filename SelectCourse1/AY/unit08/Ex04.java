@@ -8,7 +8,7 @@ public class Ex04 {
       
         // File f=new File(fileName);
         // FileWriter fw=new FileWriter(f);
-        // PrintWriter pw=new PrintWriter(fw);//bufferedWriter랑 printWriter 
+        // BufferedWriter pw=new BufferedWriter(fw);//bufferedWriter랑 printWriter 
 
         FileWriter fw = new FileWriter(fileName); 
         PrintWriter pw = new PrintWriter(fw); 
