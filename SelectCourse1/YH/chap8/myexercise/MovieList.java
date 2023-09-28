@@ -42,7 +42,7 @@ public class MovieList {
         str = br.readLine();
         while (str != null) {
             String[] strArr = str.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-            Movie movie = new Movie(strArr[0], strArr[1], strArr[2]);
+            Movie movie = new Movie(Long.parseLong(strArr[0]), strArr[1], strArr[2]);
             movieListArray.add(movie);
             str = br.readLine();
         }

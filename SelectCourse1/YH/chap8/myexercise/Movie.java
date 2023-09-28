@@ -7,12 +7,12 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Movie implements Comparable<Movie>, Comparator<Movie> {
-    String movieId;
+    long movieId;
     String title;
     String genres;
 
 
-    public Movie(String movieId, String title, String genres) {
+    public Movie(long movieId, String title, String genres) {
         this.movieId = movieId;
         this.title = title;
         this.genres = genres;
