@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Exercise06 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+    
+        String question = scanner.nextLine().trim().toLowerCase();
+     String answer = generateAnswer(question);
+
+        System.out.println(answer);
+        scanner.close();
+    }
+
+    public static String generateAnswer(String question) {
+        String answer = "";
+
+        if (question.length() > 0 && "aeiou".contains(String.valueOf(question.charAt(0)))) {
+            answer += "MAYBE";
+        }
+        char lastChar = question.charAt(question.length() - 1);
+        if ("aiu".contains(String.valueOf(lastChar))) {
+            answer += "YES";
+        }
+        if ("eo".contains(String.valueOf(lastChar))) {
+            answer += "NO";
+        }
+        if (!"aeiou".contains(String.valueOf(lastChar))) {
+            answer += "DON'T KNOW";
+        }
+
+        return answer;
+    }
+}
