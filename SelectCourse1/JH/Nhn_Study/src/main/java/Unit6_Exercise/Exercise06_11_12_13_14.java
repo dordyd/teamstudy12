@@ -54,13 +54,31 @@ public class Exercise06_11_12_13_14 {
         }
     }
 
+    public static void primeFactors(int num) {
+        int factor = 2;
+        while (num > 1) {
+            if (num % factor == 0) {
+                System.out.print(factor + " ");
+                num /= factor;
+            } else {
+                factor++;
+            }
+        }
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int inputNum = sc.nextInt();
 
         printPrime(inputNum);
+        System.out.println("====================================");
         printAllPrime(inputNum);
         System.out.println();
+        System.out.println("====================================");
         printNumberOfPrime(inputNum);
+        System.out.println();
+        System.out.println("====================================");
+        primeFactors(inputNum);
     }
 }

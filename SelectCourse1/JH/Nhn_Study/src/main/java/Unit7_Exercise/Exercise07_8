@@ -1,0 +1,10 @@
+
+
+public static int mystery(int[] A) {
+  int x = 0;
+  for (int i = 0; i < A.length; i++)
+    if (A[i] % 2 == 1) x++;
+  return x;
+}
+
+Integer Array 'A' 의 element 중 홀 수인 element의 개수를 구하는 method
