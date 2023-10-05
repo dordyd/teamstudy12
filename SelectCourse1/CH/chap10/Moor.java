@@ -9,6 +9,7 @@ public class Moor {
         for (int r = 0; r < rows; r++)
             for (int c = 0; c < columns; c++)
                 moor[r][c] = (Math.random() < probLand);
+
     }
 
     public int getNumRows() {
@@ -34,4 +35,5 @@ public class Moor {
         }
         return res;
     }
+
 }

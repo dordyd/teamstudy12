@@ -1,9 +1,9 @@
 package SelectCourse1.CH.chap11;
 
-class ListNode {
-    public String info;
-    public ListNode next;
-}
+// class ListNode {
+//     public String info;
+//     public ListNode next;
+// }
 
 public class prac11_01 {
     public static int length(ListNode lis) {
@@ -137,12 +137,13 @@ public class prac11_01 {
         ListNode d = new ListNode();
         a.info = "A";
         a.next = b;
-        b.info = "B";
-        b.next = c;
-        c.info = "C";
-        c.next = d;
-        d.info = "B";
-        d.next = null;
+        // b.info = "B";
+        // b.next = c;
+        // c.info = "C";
+        // c.next = d;
+        // d.info = "B";
+        // d.next = null;
+
         // System.out.println(length(a));
         // insertAfter(a, "D", "C");
         // System.out.println(length(a));

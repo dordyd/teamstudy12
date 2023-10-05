@@ -1,9 +1,9 @@
 package SelectCourse1.CH.chap11;
 
-class ListNode {
-    public String info;
-    public ListNode next;
-}
+// class ListNode {
+//     public String info;
+//     public ListNode next;
+// }
 
 public class prac11_02 {
     public static int length(ListNode lis, int count) {
