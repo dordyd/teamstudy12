@@ -5,53 +5,57 @@ public class Traversal {
     private Moor moor;
     private boolean found;
 
-    public Traversal(Moor m){
+    public Traversal(Moor m) {
         moor = m;
         traversal = new int[moor.getNumColumns()];
         found = traverseMoor(moor, traversal);
     }
-    
-    public Moor moor(){
+
+    public Moor moor() {
         return moor;
     }
 
-    public int length(){
-        if(found)
+    public int length() {
+        if (found) {
             return traversal.length;
-        else
+        } else {
             throw new RuntimeException("Traversal: traversal dose not exist");
+        }
     }
 
-    public int step(int i){
-        if(found)
+    public int step(int i) {
+        if (found) {
             return traversal[i];
-        else
+        } else {
             throw new RuntimeException("Traversal: traversal dose not exist");
+        }
     }
 
     private boolean traverseMoor(Moor m, int[] path) {
-        for(int row = 0; row < m.getNumRows(); row++){
-            if(searchTraversal(m, row, 0, path)) 
+        for (int row = 0; row < m.getNumRows(); row++) {
+            if (searchTraversal(m, row, 0, path)) {
                 return true;
+            }
         }
         return false;
     }
 
     private boolean searchTraversal(Moor m, int r, int c, int[] path) {
-        if(!m.land(r, c))
+        if (!m.land(r, c)) {
             return false;
-        else{
+        } else {
             path[c] = r;
-            if(c == m.getNumColumns() - 1)
+            if (c == m.getNumColumns() - 1) {
                 return true;
-            else
-                return 
-                searchTraversal(m, r-1, c+1, path) ||
-                searchTraversal(m, r, c+1, path) ||
-                searchTraversal(m, r+1, c+1, path);
+            } else {
+                return
+                        searchTraversal(m, r - 1, c + 1, path) ||
+                                searchTraversal(m, r, c + 1, path) ||
+                                searchTraversal(m, r + 1, c + 1, path);
+            }
         }
     }
-    
+
     public static void main(String[] args) {
         int numRows = 100;
         int numColumns = 100;
@@ -64,17 +68,17 @@ public class Traversal {
 
         // 수로 탐색
         Traversal traversal = new Traversal(moor);
-        
-         // 수로 탐색 결과 출력
-         if (traversal.length() > 0) {
-             System.out.println("Traversal:");
-             for (int i = 0; i < traversal.length(); i++) {
-                 int step = traversal.step(i);
-                 System.out.printf("(%d, %d) ", step, i);
-             }
-             System.out.println();
-         } else {
-             System.out.println("No traversal found.");
-         }
+
+        // 수로 탐색 결과 출력
+        if (traversal.length() > 0) {
+            System.out.println("Traversal:");
+            for (int i = 0; i < traversal.length(); i++) {
+                int step = traversal.step(i);
+                System.out.printf("(%d, %d) ", step, i);
+            }
+            System.out.println();
+        } else {
+            System.out.println("No traversal found.");
+        }
     }
 }
