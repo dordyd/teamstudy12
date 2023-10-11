@@ -32,10 +32,10 @@ link:https://www.acmicpc.net/group/workbook/view/18987/62215[baekjoon 문제집]
 * [x] Conditional statements +
 * [x] Loop statements +
 * [x] Arrays and matrices +
-* [ ] Files and input/output streams +
-* [ ] Program errors and exception handling +
-* [ ] Recursion +
-* [ ] Dynamic arrays and linked lists +
+* [x] Files and input/output streams +
+* [x] Program errors and exception handling +
+* [x] Recursion +
+* [x] Dynamic arrays and linked lists +
 
 == 2과정 : link:https://math.hws.edu/javanotes/[Introduction to Programming Using Java]
 
