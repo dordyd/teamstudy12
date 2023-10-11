@@ -36,6 +36,6 @@ public class Exercise0505 {
         int b = Integer.parseInt(scanner.next());
         int c = Integer.parseInt(scanner.next());
         // whatIsIt(a, b, c);
-        System.out.println(numOfRootsDiscriminant(1, 5, 7));
+        System.out.println(numOfRootsDiscriminant(a, b, c));
     }
 }

@@ -1,0 +1,3 @@
+#11장 Exercise
+
+<https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/uni11/node23.html>

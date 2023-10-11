@@ -33,8 +33,8 @@ public class Exercise1002{
             return fibo(n-2) + fibo(n-1);
     }
     public static void main(String[] args) {
-        System.out.println(fibo(30));
-        System.out.println(fiboMemo(30));
+    //     System.out.println(fibo(30));
+    //     System.out.println(fiboMemo(30));
         System.out.println(fiboMemo(46));
         System.out.println(fibo(46));
     }

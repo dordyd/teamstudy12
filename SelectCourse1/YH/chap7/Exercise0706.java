@@ -8,7 +8,6 @@ import java.util.Arrays;
 // distinct values in the array A.
 public class Exercise0706 {
 
-
     public static int numberOfDuplicates(int[] A) {
         int count = 0;
         boolean b = false;
@@ -27,7 +26,6 @@ public class Exercise0706 {
         return count;
     }
 
-
     public static int numberOfDistinctValues(int[] A) {
         int count = 1;
         for (int i = 0; i < A.length - 1; i++) {
@@ -42,7 +40,7 @@ public class Exercise0706 {
 
     public static void main(String[] args) {
         // Example usage
-        int[] array = {1, 2, 3, 2, 4, 5, 3, 2, 6, 8, 8};
+        int[] array = { 1, 2, 3, 2, 4, 5, 3, 2, 6, 8, 8 };
         Arrays.sort(array);
         int numDuplicates = numberOfDuplicates(array);
 

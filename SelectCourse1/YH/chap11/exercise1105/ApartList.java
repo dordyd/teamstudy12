@@ -4,7 +4,9 @@ public class ApartList {
     String name;
     String surename;
     ApartList next;
-    public ApartList(){};
+
+    public ApartList() {
+    }
 
     public ApartList(String name, String surename) {
         this.name = name;
