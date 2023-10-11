@@ -6,15 +6,15 @@ public class Exercise11_3 {
 
     public static boolean isSortListNode(ListNode lis) {
 
-        ListNode sortedList = null; // 정렬된 리스트의 헤드
+        ListNode sortedList = null;
         ListNode current = lis;
 
         while (current != null) {
-            int value = Integer.parseInt(current.info); // 현재 노드의 값을 가져옵니다.
-            ListNode newNode = new ListNode(); // 새로운 노드 생성
-            newNode.info = Integer.toString(value); // 새로운 노드의 값을 설정
+            int value = Integer.parseInt(current.info);
+            ListNode newNode = new ListNode();
+            newNode.info = Integer.toString(value);
 
-            // 정렬된 리스트에서 올바른 위치에 노드를 삽입
+            
             if (sortedList == null || value <= Integer.parseInt(sortedList.info)) {
                 newNode.next = sortedList;
                 sortedList = newNode;
