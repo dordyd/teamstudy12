@@ -140,10 +140,45 @@ public class BigNumber {
 
     }
 
+    public BigNumber plusTest(BigNumber input) {
+        intlist pointer = num;
+        intlist inputPointer = input.num;
+        BigNumber answer = new BigNumber("1");
+        intlist answerPointer = answer.num;
+        int ans = 0;
+        int carry = 0;
+        if (this.length > input.length) {
+            for (int i = 0; i < input.length; i++) {
+                ans += pointer.info + inputPointer.info + carry;
+                carry = ans / 10;
+                ans %= 10;
+                answerPointer.next = new intlist();
+                answerPointer.next.info = ans;
+                answerPointer = answerPointer.next;
+                pointer = pointer.next;
+                inputPointer = inputPointer.next;
+                ans = 0;
+            }
+            while (pointer != null) {
+                ans += pointer.info + carry;
+                carry = ans / 10;
+                ans %= 10;
+                answerPointer.next = new intlist();
+                answerPointer.next.info = ans;
+                answerPointer = answerPointer.next;
+                pointer = pointer.next;
+                ans = 0;
+            }
+
+        }
+        answer.num = answer.num.next;
+        return answer;
+    }
+
     public static void main(String[] args) {
-        BigNumber test = new BigNumber("10000");
-        BigNumber test1 = new BigNumber("10000");
-        System.out.println(test.compare(test1));
+        BigNumber test = new BigNumber("20000000");
+        BigNumber test1 = new BigNumber("1111111");
+        System.out.println(test.plusTest(test1));
     }
 
 }
