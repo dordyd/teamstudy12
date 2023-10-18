@@ -18,12 +18,16 @@ public class Exercise0901 {
 
     // 완성 코드
     public static void main(String[] args) {
-        int sumI = 0;
-        int sumJ = 9;
-        for (int i = 0, j = 0; i < 10 && j < 10; i++, j++) {
-            System.out.println(i + " + " + j + " = " + (i + j));
-        }
-        System.out.println("I’ve printed out the sums of i and j up to " + sumI + "," + sumJ);
+//        int sumI = 0;
+//        int sumJ = 9;
+//        for (int i = 0, j = 0; i < 10 && j < 10; i++, j++) {
+//            System.out.println(i + " + " + j + " = " + (i + j));
+//        }
+//        System.out.println("I’ve printed out the sums of i and j up to " + sumI + "," + sumJ);
+
+        String str = "0111";
+        int a = Integer.parseInt(str);
+        System.out.println(a);
     }
 
 }

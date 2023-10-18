@@ -208,7 +208,6 @@ public class ListNodeRecur {
         ListNode copyNode = new ListNode();
         copy = ListNode.insertLast(copy, lis.info);
 
-
         return copySol(copy, lis.next);
     }
 

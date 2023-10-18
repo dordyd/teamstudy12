@@ -154,7 +154,7 @@ public class ListNode {
             }
             gen = gen.next;
         }
-        return lis;
+        return lis.next;
     }
 
     public static ListNode copy(ListNode lis) {

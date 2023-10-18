@@ -1,0 +1,133 @@
+= Quiz
+
+Question 1:
+
+One of the components of a computer is its CPU. What is a CPU and what role does it play in a computer?
+
+* ansewer
+
+프로그램을 실행시키는 부품이다. 메인 메모리에 저장되어져 있는 Instruction과 Data들을 이용해 연산을 진행하고, 연산은 ALU를 통해서 산술 연산을 진행한다.
+추가로 PC(Program Counter)를 통해 특수 목적용 연산을 진행하는데, PC는 다음에 가져와야 할 메인메모리의 주소를 가지고 있다.
+CPU는 데이터나 연산을 직접 꺼내지 않고, 메모리의 Location(or Address)에 저장되어진 값을 가지고 온다.
+
+
+
+---
+
+Question 2:
+
+Explain what is meant by an "asynchronous event." Give some examples.
+
+* ansewer
+
+비동기 이벤트란, CPU에서 처리해야하는 시퀀스를 처리하는 와중에 중간에 예상하지 못한 새로운 명령어가 입력되는 경우(이런 경우를 interrupt 라고 함) 실행중이던 명령어들을 잠시 중단시키고, Program Counter를 통해 실행해야 할 주소를 기억 한 후
+예상에 없던 이벤트(instruction)을 처리하고 난 후 pc에 저장된 주소로 다시 돌아가서 연산을 처리하는 것. 해당 연산을 효율적으로 처리하는게 비동기적 이벤트이다
+
+ex) -> 시계 display가 켜져있는 상태에 마우스나 키보드 입력을 한 경우
+
+---
+
+Question 3:
+
+What is the difference between a "compiler" and an "interpreter"?
+
+* ansewer
+
+공통점 : 컴퓨터는 high-level-language로 작성된 코드를 해석 할 수 없기에, 저수준 언어인 machine language로 번역하는 작업을 수행하는 프로그램
+
+차이점
+
+* 컴파일러 : 컴파일러는 코드 전체를 한번에 불러와서 전체를 한번에 translate해줌
+
+* 인터프리터 : 한줄 한줄 코드마다의 필요한 명령어를 가져다 쓰면서 translate해줌
+
+---
+
+Question 4:
+
+Explain the difference between high-level languages and machine language.
+
+* ansewer
+
+high-level-language : 프로그래머가 프로그램에 맞게 작성하는 코드로, 작성된 프로그램은 컴퓨터가 이해 할 수 없는 코드이기도 하면서, 실행 시킬 수 없는 코드이다.
+
+machine-language : 컴퓨터가 실행 할 수 있는 언어이다. 이진 숫자로 구성되어져 있으며, pc의 사양에 따라 읽을 수 있는 이진숫자의 크기도 다르다.
+
+---
+
+Question 5:
+
+If you have the source code for a Java program, and you want to run that program, you will need both a compiler and an interpreter. What does the Java compiler do, and what does the Java interpreter do?
+
+* ansewer
+
+자바는 JVM이라는 가상 머신을 가지고 있다. 이 가상 머신은 자바에서의 컴파일을 통해서 만들어진 자바 바이트 코드를 가상머신안에 기계어로 번역 할 수 있도록 인터프리터가 내장 되어져 있다.
+
+. ** 인터프리팅으로 인해 플랫폼에 종속되지 않는다. **
+. ** 두전째 이유는 JVM에서 필요한 바이트 코드만 배포할 수 있기에 보안에도 강력하다.**
+
+---
+
+Question 6:
+
+What is a subroutine?
+
+* ansewer
+
+같은 연산을 반복하게 된다면 거대한 프로그램 작성하는데 불리한게 작용한다. 똑같은 연산을 반복하고, 동일한 데이터를 초기화 하는 일을 줄여주기에, 이러한 반복성을 줄이기 위해 이름을 통해서 사용한다.(사용되는 이름은 명령어들의 집합)
+또한 프로그램의 가독성을 높여주고, 이외의 연산에 대해서는 신경 쓰지 않아도 되는 장점이 있다.
+
+
+---
+
+Question 7:
+
+Java is an object-oriented programming language. What is an object?
+
+* ansewer
+
+Object는 클래스에 정의되어진 상태나 메세지를 받을 수 있는 하나의 이름을 가진 타입이다.
+
+
+
+
+---
+
+Question 8:
+
+What is a variable? (There are four different ideas associated with variables in Java. Try to mention all four aspects in your answer. Hint: One of the aspects is the variable's name.)
+
+* ansewer
+
+. 변수 이름
+
+. 변수 타입
+
+. 변수 메모리 위치
+
+. 변수 데이터
+
+---
+
+Question 9:
+
+Java is a "platform-independent language." What does this mean?
+
+* ansewer
+
+JVM을 사용하기에, 컴파일 해서 다른 기계어가 나오더라도, JVM 인터프리터에서 같은 연산을 진행 할 수 있기에, 어떤 운영체제가 실행을 하더라도 결과적으로는 같은 결과물을 내놓을 수 있고, 재 컴파일을 할 필요가 없다..? 잘 모르겠습니다.
+
+---
+
+Question 10:
+
+What is the "Internet"? Give some examples of how it is used. (What kind of services does it provide?)
+
+* ansewer
+
+인터넷이란, TCP/IP 규격을 사용하는 네트워크 통신으로, 해당 네트워크를 인터넷이라고 한다.
+또한, DSL, 케이블 모뎀, 이더넷을 통해서 물리적 연결을 하는 기기 또한 인터넷 네트워크를 접속하게 된다.
+
+TCP -> 전송 제어 프로토콜 // 오류없이 데이터를 수산하는 규격
+
+IP -> 인터넷 프로토콜 // 물리적 연결을 통해 데이터를 전송하는 방법

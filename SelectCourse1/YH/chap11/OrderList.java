@@ -185,9 +185,9 @@ public class OrderList {
         OrderList.print(lis1);
         lis2.num = 10;
         OrderList.print(lis2);
-//        OrderList newLis2;
-//        newLis2 = listMergeDeleteDouble(lis1, lis2);
-//        OrderList.print(newLis2);
+        OrderList newLis2;
+        newLis2 = listMergeDeleteDouble(lis1, lis2);
+        OrderList.print(newLis2);
 
     }
 }
