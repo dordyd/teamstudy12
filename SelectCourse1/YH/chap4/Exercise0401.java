@@ -9,6 +9,7 @@ public class Exercise0401 {
         return x * EuroValue;
     }
 
+
     public static boolean sumOverflow(byte x, byte y) {
         if (-128 <= x + y && x + y <= 127) //-128 can cahnge Byte.MIN_VALUE and also, 127 can change Byte.MAX_VALUE
         {
