@@ -1,0 +1,198 @@
+= Quiz
+
+Question 1:
+
+A "black box" has an interface and an implementation. Explain what is meant by the terms interface and implementation.
+
+* answer
+
+interface  : 호출자인 외부 세계와 구현자인 내부 세계 사이에서 의사소통하는 방법, 호출자는 어떤 동작을 하는지만 알면 됨
+
+implementation : 외부 세계에서는 볼 수 없는 내부세계에서의 실제 구현, 구현자는 어떤식으로 동작하는지 명시
+
+---
+
+Question 2:
+
+A subroutine is said to have a contract. What is meant by the contract of a subroutine? When you want to use a subroutine, why is it important to understand its contract? The contract has both "syntactic" and "semantic" aspects. What is the syntactic aspect? What is the semantic aspect?
+
+* answer
+
+서브루틴은 interface, implement를 가진다. 목적에 부합하는 코드를 사용해야하는 semantics를 이해하기 위한 명시, 합법적인 코드를 작성하기 위해 syntaxmatics를 이해하기 위한 명시
+두개가 한번에 이루어 져야 하는것을 contract라고 한다.
+
+
+
+---
+
+Question 3:
+
+Briefly explain how subroutines can be useful in the top-down design of programs.
+
+* answer
+
+큰 틀을 정의해서 그에 필요에 맞게, 하나하나씩 서브루틴을 작성하는 것.
+
+** 코드의 가독성
+** 추상화
+** 재사용
+** 실행 컨텍스트(콜스택은 하나의 메모리 자료구조로써, 콜스택은 프로시저의 주소, 프로시저가 포함하는 명령어들의 집합, 등등(사진 참고) )
+
+---
+
+Question 4:
+
+Discuss the concept of parameters. What are parameters for? What is the difference between formal parameters and actual parameters?
+
+* answer
+
+매개변수란, 블랙박스에서 인터페이스로, 내부세계와 외부세계를 구분하기 위한 수단이다.
+
+* formal parameter : 내부세계(서브루틴)를 정의하기 위해 사용되는 패러미터
+
+* actual parameter : 정의된 서브루틴을 연산할때, 실질적으로 계산되어야 하는 값.
+** 외부에서 초기화가 일어난 상태여야함
+
+---
+
+Question 5:
+
+Give two different reasons for using named constants (declared with the final modifier).
+
+* answer
+
+. ** 가독성을 높이기 위해서 사용한다. **
+
+. ** 값의 변경을 쉽게 할 수 있기 때문이다. **
+
+---
+
+Question 6:
+
+What is an API? Give an example.
+
+* answer
+
+API는 (Application Programming Interface)로, 소프트웨어 도구상자라고 불린다.
+
+이러한 도구상자들에 어떤 루틴이 있고, 어떤 매개변수를 사용하는지, 어떤 작업을 수행하는지에 대한 명세다
+
+Java.util.lang 안에 있는 built-in API
+
+maven, gradle에서 불러 올 수 있는 라이브러리등
+
+
+---
+
+Question 7:
+
+What might the following expression mean in a program?
+
+(a,b) -> a*a + b*b + 1
+
+* answer
+
+primitive타입의 a, b 두개의 값을 받아서 a제곱과 b제곱과 1을 더해 반환하는 연햐
+
+---
+
+Question 8:
+
+Suppose that SupplyInt is a functional interface that defines the method public int get(). Write a lambda expression of type SupplyInt that gets a random integer in the range 1 to 6 inclusive. Write another lambda expression of type SupplyInt that gets an int by asking the user to enter an integer and then returning the user's response.
+
+* answer
+link:quizexercise/quiz0408/Quiz0408.java[해결 못함]
+
+---
+
+Question 9:
+
+Write a subroutine named "stars" that will output a line of stars to standard output. (A star is the character "*".) The number of stars should be given as a parameter to the subroutine. Use a for loop. For example, the command "stars(20)" would output
+----
+********************
+----
+
+* answer
+
+link:quizexercise/quiz0409/Quiz0409.java[]
+
+---
+
+Question 10:
+
+Write a main() routine that uses the subroutine that you wrote for Question 7 to output 10 lines of stars with 1 star in the first line, 2 stars in the second line, and so on, as shown below.
+----
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+----
+
+* answer
+
+link:quizexercise/quiz0410/Quiz0410.java[]
+
+---
+
+Question 11:
+
+Write a function named countChars that has a String and a char as parameters. The function should count the number of times the character occurs in the string, and it should return the result as the value of the function.
+
+* answer
+
+link:quizexercise/Quiz0411.java[]
+
+---
+
+Question 12:
+
+Write a subroutine with three parameters of type int. The subroutine should determine which of its parameters is smallest. The value of the smallest parameter should be returned as the value of the subroutine.
+
+* answer
+
+link:quizexercise/Quiz0412.java[]
+
+---
+
+Question 13:
+
+Write a function that finds the average of the first N elements of an array of type double. The array and N are parameters to the subroutine.
+
+* answer
+
+link:quizexercise/Quiz0413.java[]
+
+---
+
+Question 14:
+
+Explain the purpose of the following function, and explain how it works:
+----
+static int[] stripZeros( int[] list ) {
+int count = 0;
+for (int i = 0; i < list.length; i++) {
+        if ( list[i] != 0 )
+            count++;
+}
+int[] newList;
+newList = new int[count];
+int j = 0;
+for (int i = 0; i < list.length; i++) {
+        if ( list[i] != 0 ) {
+            newList[j] = list[i];
+            j++;
+        }
+    }
+    return newList;
+}
+----
+
+* answer
+
+actual parameter에 들어오는 int형 배열에 0이 아닌 값들을 newList에 순차적으로 하나씩 집어 넣음
