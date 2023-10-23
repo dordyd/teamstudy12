@@ -1,0 +1,156 @@
+*<Question 1>*
+
+One of the components of a computer is its CPU.
+What is a CPU and what role does it play in a computer?
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 1 >
+CPU(central processor unit) 는 '중앙처리장치'라 불리며, 컴퓨터를 구성하는 요소 중 하나이다.
+CPU가 프로그램을 실행할 때, 프로그램은 RAM에 저장된다. 프로그램 이외에 사용 또는 처리중인 데이터또한 RAM에 저장할 수 있다.
+메모리는 sequence of location으로 구성되어 있으며, location에는 각각의 번호가 부여되며 이러한 번호를 주소(Address)라고 한다.
+CPU가 특정한 프로그램 명령이나 데이터에 접근해야 하는 경우, CPU는 해당하는 정보가 있는 Address에 신호를 보낸다.
+
+CPU가 메모리에서 명령어를 읽거나 실행하는 과정을 fetch-and-execute cycle이라 한다.
+
+CPU는 Arithmetic Logic Unit(산술 논리 장치)를 가지고 있다. ALU는 덧셈과 뺄셈 같은 작업을 수행하는 프로세서의 일부이다.
+ALU는 또한 적은 수의 register를 보유하고 있으며, register는 하나의 숫자를 가질 수 있는 작은 메모리 단위이다.
+General Purpose의 CPU는 보통 16개 또는 32개의 register를 가진다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 2>*
+
+Explain what is meant by an "asynchronous event." Give some examples.
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 2 >
+'Asynchronous event'는 '비동기 이벤트'라고 불리며, 비동기 이벤트는 CPU의 fetch-and-execute cycle이외의 독립적으로 발생하거나 순서에 구애받지 않고 발생하는 이벤트이다.
+예를 들어 사용자가 웹 애플리케이션을 사용중에 버튼을 클릭하면 비동기 이벤트가 발생한다.
+-비동기 이벤트 처리 순서-
+1. interrupt signal은 device를 연결하는 순간 발생하며, CPU는 interrupt를 처리하기 위한 interrupt handler를 Main Memory에 등록한다.
+2. 비동기 이벤트가 발생하면 CPU는 수행 중인 작업을 중단하고 interrupt handler에게 제어를 넘기고 handler는 event를 처리하고 제어를 다시 CPU에게 반환한다.
+3. 비동기 이벤트가 발생하여 작업을 중단한 시점에서 다시 시작하며, 작업을 계속 수행한다.
+
+-Interrupt Handler와 Event Handler의 차이- 인터럽트 핸들러는 주로 하드웨어 레벨에서 발생하는 비동기 이벤트를 처리하는 데 사용되며, 이러한 이벤트에 대한 빠른 응답이 필요하다.
+반면 이벤트 핸들러는 주로 사용자 인터페이스와 상호 작용하며 응용 프로그램의 비동기적 이벤트를 처리하는 데 사용된다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 3>*
+
+What is the difference between a "compiler" and an "interpreter"?
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 3 >
+-Compiler-
+1. 소스 코드 전체를 한번에 읽고 분석한 후, 기계어 또는 중간 코드로 번역한다. (Java의 경우 java byte code로 번역함.)
+2. 일반적으로 실행 시간이 빠르다.
+3. 모든 오류를 한번에 검출하며, 실행 전에 오류를 수정해야 한다.
+
+-Interpreter-
+1. 소스 코드를 한 줄씩 읽고 번역하며, 한 줄씩 실행한다.
+2. 중간 코드파일을 생성하지 않고, 소스 코드를 실시간으로 해석하여 실행한다.
+3. 일반적으로 Compiler에 비해 실생 시간이 느릴 수 있다. Just-In-Time(JIT) compiling을 사용하여 실행 속도를 향상시킬 수 있다.
+4. 한 줄씩 읽기 때문에 오류가 발생하면 해당 줄 이전에 오류가 있다. 해당 줄을 수정 후 해당 줄부터 다시 실행 가능하다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 4>*
+
+Explain the difference between high-level languages and machine language.
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 4 >
+High-level language는 사람이 이해하고 사용하기 쉽도록 하기위해 개발된 Programming 언어이다.
+Machine language는 실제 컴퓨터에서 사용되는 언어로 이진 코드로 표현된다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 5>*
+
+If you have the source code for a Java program, and you want to run that program, you will need both a compiler and an interpreter.
+What does the Java compiler do, and what does the Java interpreter do?
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 5 >
+JIT Compiler와 Java interpreter는 JVM의 구성요소이다.
+Java interpreter는 Java complier를 통해 생성된 .class 파일의 소스 코드를 한 줄씩 실행한다.
+JIT Compiler는 Java Interpreter의 단점을 보완하기 위해 도입되었다.
+Interpreter 방식으로 실행하다가 적절한 시점에 bytecode 전체를 compile하여 Native Code로 변경하고, 이후에는 해당 method를 더 이상 Interpreting하지 않고 Native Code로 직접 실행하는 방식이다.
+Native Code를 실행하는 것이 하나씩 Interpreting하는 것보다 빠르고, Native Code는 캐시에 보관하기 때문에 한 번 Compile된 코드는 계속 빠르게 수행되게 된다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 6>*
+
+What is a subroutine?
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 6 >
+Subroutine 이란 대형 프로그램을 분해하여 해당 기능을 수행하는 class, method 등으로 구성하는 것이다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 7>*
+
+Java is an object-oriented programming language.
+What is an object?
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 7 >
+Object는 현실의 엔티티나 개념을 프로그램 안에서 모델링하고 표현하는 방법이다. Java에서 Object는 Class로부터 생성된다.
+각 Object는 고유한 Attribut와  Method를 가지고 있으며 다른 Object와 상호작용이 가능하다.
+객체지향 프로그래밍은 코드를 모듈화하고 유지보수를 용이하게 한다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 8>*
+
+What is a variable?
+(There are four different ideas associated with variables in Java.
+Try to mention all four aspects in your answer.
+Hint: One of the aspects is the variable's name.)
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 8 >
+Variable : 참조되고 사용될 수 있도록 이름이 부여된 메모리 위치이다. variable은 value를 저장하고, value는 반드시 type이 정의되어야 한다.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 9>*
+
+Java is a "platform-independent language." What does this mean?
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 9 >
+Java program은 한 번 compile되어 Java bytecode program으로 생성된다.
+이렇게 생성된 프로그램은 JVM의 interpreter가 있는 어떤 컴퓨터에서도 실행이 가능하다. 다른 언어들은 각 플랫폼에 맞게 다시 compile 해야 한다.
+Java program은 특정 플랫폼에 종속되지 않고 다양한 플랫폼에서 실행이 가능하다. Write once, Run anywhere.
+
+-------------------------------------------------------------------------------------------------------------
+
+*<Question 10>*
+
+What is the "Internet"?
+Give some examples of how it is used.
+(What kind of services does it provide?)
+
+-------------------------------------------------------------------------------------------------------------
+
+< Answer 10 >
+Internet은 수백만 대의 컴퓨터를 연결하는 네트워크이다.
+인터넷에 연결된 컴퓨터는 서로 통신할 수 있다.
+Internet은 이메일, 파일 공유, World Wide Web과 같은 서비스들을 제공한다.
+-------------------------------------------------------------------------------------------------------------
+
+
+

@@ -1,0 +1,104 @@
+*<Question 1>*
+
+Briefly explain what is meant by the syntax and the semantics of a programming language.
+Give an example to illustrate the difference between a syntax error and a semantics error.
+
+----------
+< Answer 2 >
+Syntax는 언어의 규칙이다. 사용하는 언어의 규칙에 어긋나면 Compile하는 과정에서 Syntax Error가 발생한다.
+Semantics는 문장의 의미이다. Syntax를 잘 지켜 코드를 작성하더라도 Semantic 오류, 즉 코드의 의미가 잘못되어 있다면 이도한 결과를 도출할 수 없다.
+
+Java와 Python의 루프문의 Syntax는 다르다.
+사용자가 알고리즘을 구현할 때, Syntax는 올바르지만, Semantics에서 구현을 잘 못한다면 원하는 결과값을 도출할 수 없다.
+----------
+
+*<Question 2>*
+
+What does the computer do when it executes a variable declaration statement.
+Give an example.
+
+----------
+< Answer 2 >
+1. 변수를 선언(Declaration)하면 컴퓨터는 해당변수에 메모리 주소를 할당해준다.
+2. 메모리 주소와 변수명을 associate한다.
+3. 변수명을 사용해 메모리주소를 참조한다.
+
+또한 변수를 초기화(initialization)해야만 변수를 사용하거나 할당(Assignment)이 가능하다.
+-Primitive type-
+메모리에 직접 변수의 값을 저장한다.
+메모리에 저장된 값들 끼리 연산된다. 따라서 연산이 효율적이고 빠르다.
+-Reference type-
+객체의 메모리 주소를 저장한다.
+객체의 데이터를 직접 연산하는 것이 아니라 객체의 메모리 주소를 다룬다. 따라서 Reference type 변수에 연산을 수행하면 해당 객체에 영향을 미칠 수 있다.
+----------
+
+Question 3:
+
+What is a type, as this term relates to programming?
+
+-----
+< Answer 3 >
+
+-----
+
+Question 4:
+
+One of the primitive types in Java is boolean.
+What is the boolean type?
+Where are boolean values used?
+What are its possible values?
+
+Question 5:
+
+Give the meaning of each of the following Java operators:
+
+a) ++
+
+b) &&
+
+c) !=
+
+Question 6:
+
+Explain what is meant by an assignment statement, and give an example.
+What are assignment statements used for?
+
+Question 7:
+
+What is meant by precedence of operators?
+
+Question 8:
+
+What is a literal?
+
+Question 9:
+
+In Java, classes have two fundamentally different purposes.
+What are they?
+
+Question 10:
+
+What is the difference between the statement "x = TextIO.getDouble();" and the statement "x = TextIO.getlnDouble();"
+
+Question 11:
+
+Explain why the value of the expression 2 + 3 + "test" is the string "5test" while the value of the expression "test" + 2 + 3 is the string "test23".
+What is the value of "test" + 2 * 3 ?
+
+Question 12:
+
+Integrated Development Environments such as Eclipse often use syntax coloring, which assigns various colors to the characters in a program to reflect the syntax of the language.
+A student notices that Eclipse colors the word String differently from int, double, and boolean.
+The student asks why String should be a different color, since all these words are names of types.
+What's the answer to the student's question?
+
+Question 13:
+
+What is the purpose of an import directive, such as import textio.TextIO or import java.util.Scanner?
+
+Question 14:
+
+Write a complete program that asks the user to enter the number of "widgets" they want to buy and the cost per widget.
+The program should then output the total cost for all the widgets.
+Use System.out.printf to print the cost, with two digits after the decimal point.
+You do not need to include any comments in the program.
