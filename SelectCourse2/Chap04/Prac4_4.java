@@ -31,10 +31,10 @@ public class Prac4_4 {
 
     public static double avgCountOfTwoDiceSumSimulator(int userWantNum) {
         final int SIMULATION_COUNT = 10000;
-        int sum = 0;
+        double sum = 0;
         for (int j = 0; j < SIMULATION_COUNT; j++) {
             sum += Prac4_3.predictNumber(userWantNum);
         }
-        return sum / 10000;
+        return sum / SIMULATION_COUNT;
     }
 }

@@ -23,16 +23,16 @@ public class Prac4_1 {
     }
 
     public static void printCapitalized(String input) {
-        StringBuilder outPutString = new StringBuilder();
+        StringBuilder outputString = new StringBuilder();
 
-        outPutString.append(Character.toUpperCase(input.charAt(0)));
+        outputString.append(Character.toUpperCase(input.charAt(0)));
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i - 1) == ' ') {
-                outPutString.append(Character.toUpperCase(input.charAt(i)));
+                outputString.append(Character.toUpperCase(input.charAt(i)));
             } else {
-                outPutString.append(input.charAt(i));
+                outputString.append(input.charAt(i));
             }
         }
-        System.out.println(outPutString);
+        System.out.println(outputString);
     }
 }

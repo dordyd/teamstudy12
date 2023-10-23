@@ -11,7 +11,8 @@ A hexadecimal integer is a sequence of hexadecimal digits, such as 34A7, ff8, 17
 value = 0;
 for ( i = 0; i < str.length();  i++ )
    value = value*16 + hexValue( str.charAt(i) );
-Of course, this is not valid if str contains any characters that are not hexadecimal digits. Write a program that reads a string from the user. If all the characters in the string are hexadecimal digits, print out the corresponding base-10 value. If not, print out an error message.
+Of course, this is not valid if str contains any characters that are not hexadecimal digits. Write a program that reads a string from the user.
+ If all the characters in the string are hexadecimal digits, print out the corresponding base-10 value. If not, print out an error message.
 */
 package SelectCourse2.Chap04;
 
