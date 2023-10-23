@@ -1,0 +1,7 @@
+{
+  "java.checkstyle.configuration": "/Users/weare0/Downloads/checkstyle.xml",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "editor.defaultFormatter": "vscode.markdown-language-features"
+}
