@@ -53,7 +53,7 @@ public class PairOfDice {
     }
 
     public static void main(String[] args) {
-        PairOfDice dice1 = new PairOfDice();
+//        PairOfDice dice1 = new PairOfDice();
 //        Exercise5_1 dice2 = new Exercise5_1(1, 13);
         PairOfDice dice2 = new PairOfDice(3, 6);
 

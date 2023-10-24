@@ -11,12 +11,12 @@ package Chapter5;
 public class StatCalc {
 
     public static void main(String[] args) {
-        StatCalc statCalc = new StatCalc();
+        StatCalc calc = new StatCalc();
         for (int i = 1; i <= 10; i++) {
-            statCalc.enter(i);
+            calc.enter(i);
         }
-        System.out.println(statCalc.getStandardDeviation());
-        System.out.println(statCalc.getMean());
+        System.out.println(calc.getStandardDeviation());
+        System.out.println(calc.getMean());
     }
 
     private int count;   // Number of numbers that have been entered.

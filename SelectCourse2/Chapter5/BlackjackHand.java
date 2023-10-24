@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class BlackjackHand extends Hand {
 
     public static void main(String[] args) {
+        playGame();
+    }
+
+    public static void playGame() {
         Scanner sc = new Scanner(System.in);
 
         Deck deck;            // A deck of cards.
@@ -32,9 +36,9 @@ public class BlackjackHand extends Hand {
             }
             System.out.println("Value of hand is " + hand.getBlackjackValue());
             System.out.println();
-            System.out.print("Again? ");
+            System.out.print("Again? (Y/N) >> ");
             String againAnswer = sc.next();
-            if (againAnswer.equals("yes")) {
+            if (againAnswer.equals("Y") || againAnswer.equals("y")) {
                 again = true;
             } else {
                 again = false;

@@ -2,6 +2,7 @@ package Chapter4;
 
 public class Exercise4_3 {
 
+
     public static int throwDice() {
         return (int) (Math.random() * 6) + 1;
     }

@@ -2,7 +2,7 @@ package Chapter4;
 
 public class Exercise4_2 {
 
-    public static int toDecimal(String inputValue) {
+    public static int hexToDecimal(String inputValue) {
         int decimal = 0;
         for (int i = 0; i < inputValue.length(); i++) {
             decimal = decimal * 16 + hexValue(inputValue.charAt(i));
@@ -26,7 +26,11 @@ public class Exercise4_2 {
             case 'F':
                 return 15;
             default:
-                return Integer.parseInt(String.valueOf(ch));
+                if (ch >= 1 && ch <= 9) {
+                    return Integer.parseInt(String.valueOf(ch));
+                } else {
+                    return -1;
+                }
         }
     }
 
@@ -36,8 +40,8 @@ public class Exercise4_2 {
         String inputValue2 = "ff8";
         String inputValue3 = "124204";
 
-        System.out.println(toDecimal(inputValue1));
-        System.out.println(toDecimal(inputValue2));
-        System.out.println(toDecimal(inputValue3));
+        System.out.println(hexToDecimal(inputValue1));
+        System.out.println(hexToDecimal(inputValue2));
+        System.out.println(hexToDecimal(inputValue3));
     }
 }
