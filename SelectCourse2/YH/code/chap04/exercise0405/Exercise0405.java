@@ -50,12 +50,11 @@ public class Exercise0405 {
 //    }
 
     public static ArrayProcessor add(){
-        return array -> {
+        return x -> {
             double sum = 0;
-            for(int i = 0; i<array.length; i++){
-                sum = sum+ array[i];
+            for(int i = 0; i<x.length; i++){
+                sum = sum+ x[i];
             }
-
             return sum;
         };
     }

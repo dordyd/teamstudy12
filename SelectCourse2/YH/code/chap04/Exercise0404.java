@@ -29,7 +29,7 @@ public class Exercise0404 {
     }
 
     public static void averagePrintAll(){
-        System.out.println("주사위 총합 |   평균 굴림 횟수");
+        System.out.println("주사위 총합  |   평균 굴림 횟수");
         for(int i = 2; i<=12; i++){
             System.out.print("\t" + i + "\t -> \t" + predictDiceAverage(i));
             System.out.println();

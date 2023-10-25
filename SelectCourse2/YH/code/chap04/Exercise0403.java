@@ -12,7 +12,8 @@ package SelectCourse2.YH.code.chap04;
  */
 public class Exercise0403 {
     public static int rollingDice() {
-        return (int) (Math.random()*7) + (int) (Math.random() * 7); // 주사위 2번 던지는 행위의 값을 전부 더함.
+        return (int) (Math.random()*6) + (int) (Math.random() * 6) + 2; // 주사위 2번 던지는 행위의 값을 전부 더함.
+        // 6+1
     }
 
     public static int predictNumber(int number) {

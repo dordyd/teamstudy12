@@ -1,8 +1,7 @@
-package SelectCourse2.YH.code.chap04.exercise0408;
+package SelectCourse2.YH.code.chap05.exercise0506;
 
 import java.util.Scanner;
-
-public class Exercise0408 {
+public class Exercise0506 {
     static int a[] = new int[10];
     static int b[] = new int[10];
     static int answer[] = new int[10];
