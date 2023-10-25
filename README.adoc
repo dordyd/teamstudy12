@@ -42,7 +42,7 @@ link:https://www.acmicpc.net/group/workbook/view/18987/62215[baekjoon 문제집]
 * [ ] Overview: The Mental Landscape
 * [ ] Programming in the Small I: Names and Things
 * [ ] Programming in the Small II: Control
-* [X] Programming in the Large I: Subroutines
+* [x] Programming in the Large I: Subroutines
 * [ ] Programming in the Large II: Objects and Classes
 * [ ] Introduction to GUI Programming
 * [ ] Arrays, ArrayLists, and Records
