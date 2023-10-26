@@ -1,3 +1,4 @@
+import textio.TextIO;
 import java.util.Scanner;
 
 public class BlackJackHand extends Hand {
@@ -52,7 +53,7 @@ public class BlackJackHand extends Hand {
             Deck deck = new Deck();
             deck.shuffle();
 
-            int numCard = (int) (Math.random() * 5) + 2; // Randomly choose 2 to 6 cards.
+            int numCard = (int) (Math.random() * 5) + 2;
             BlackJackHand hand = new BlackJackHand();
 
             for (int i = 0; i < numCard; i++) {
@@ -64,7 +65,7 @@ public class BlackJackHand extends Hand {
             int blackjackValue = hand.getBlackjackValue();
             System.out.println("hand value: " + blackjackValue);
 
-            System.out.print("continue testing? (y/n) ");
+            System.out.print("continue? (y/n) ");
             String choice = scanner.next().toLowerCase();
             contin = choice.equals("y");
         }
