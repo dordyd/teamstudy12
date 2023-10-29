@@ -114,7 +114,7 @@ public class Movie {
         sb.append("BoxOfficeUsGross : ").append(boxOfficeUSGross).append("\n");
         sb.append("Budget : ").append(budget).append("\n");
         sb.append("OriginalAuthor : ").append(originalAuthor).append("\n");
-        sb.append("OriginalSource : ").append(originalSource).append("\n");
+        sb.append("OriginalSource : ").append(originalSource);
         return sb.toString();
     }
 }

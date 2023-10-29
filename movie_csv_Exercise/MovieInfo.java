@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class MovieInfoTest {
+public class MovieInfo {
 
     private List<Movie> movie = new ArrayList<>();
 
@@ -53,7 +53,7 @@ public class MovieInfoTest {
 
     }
 
-    public int bisectionSearch(String key) {
+    public Movie bisectionSearch(String key) throws SearchNotFound {
         int mid;
         int low = 0;
         int high = movie.size();
@@ -62,22 +62,14 @@ public class MovieInfoTest {
             mid = (low + high) / 2;
             value = movie.get(mid).getCategory(category);
             if (key.compareTo(value) == 0) {
-                return mid;
+                return movie.get(mid);
             } else if (key.compareTo(value) < 0) {
                 high = mid - 1;
             } else {
                 low = mid + 1;
             }
         }
-        return -1;
-    }
-
-    public void printWithIndex(int index) {
-        if (index == -1) {
-            System.out.println("찾을 수 없습니다.");
-            return;
-        }
-        System.out.println(movie.get(index));
+        throw new SearchNotFound(key + "를 찾을 수 없습니다");
     }
 
     public void sort(Comparator<Movie> comp) {

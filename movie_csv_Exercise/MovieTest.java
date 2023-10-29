@@ -23,10 +23,14 @@ public class MovieTest {
             while (true) {
                 System.out.println("찾고싶은 영화의 " + input + "을 입력해주세요. (끝내려면 엔터)");
                 String userInput = scan.nextLine();
-                movie.printWithIndex(movie.bisectionSearch(userInput));
-                userInput = scan.nextLine();
                 if (userInput.equals(""))
                     break;
+                try {
+                    System.out.println(movie.bisectionSearch(userInput));
+                } catch (SearchNotFound e) {
+                    System.out.println(e.getMessage());
+                }
+
             }
 
         }
