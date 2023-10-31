@@ -1,6 +1,5 @@
 package movie_csv_Exercise;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class MovieTest {

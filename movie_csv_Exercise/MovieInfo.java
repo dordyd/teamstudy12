@@ -84,12 +84,7 @@ public class MovieInfo {
 
     public static Comparator<Movie> getComparator(Category category) {
 
-        return new Comparator<Movie>() {
-            @Override
-            public int compare(Movie o1, Movie o2) {
-                return o1.getCategory(category).compareTo(o2.getCategory(category));
-            }
-        };
+        return (o1, o2) -> o1.getCategory(category).compareTo(o2.getCategory(category));
     }
 
 }
